@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+/* import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip'; */
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import * as Scroll from 'react-scroll';
@@ -117,20 +117,22 @@ const NavBar = () => {
               width:'100%'
             }}
           >
-			
-            <Link activeClass="active" onClick={PersonalizedScroll} spy={true} smooth={true} offset={-70} className="appBarLink">
+            {/* <Link to="nosotros" activeClass="active" onClick={PersonalizedScroll} spy={true} smooth={true} offset={-70} className="appBarLink">
+              Nosotros
+            </Link> */}
+            <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLink">
               Nosotros
             </Link>
-            <Link to="about" spy={true} smooth={true} className="appBarLink">
+            <Link to="galeria" spy={true} smooth={true} className="appBarLink">
               Galeria
             </Link>
-            <Link to="contact" spy={true} smooth={true} className="appBarLink">
+            <Link to="super8" spy={true} smooth={true} className="appBarLink">
               Super 8mm
             </Link>
-            <Link to="service" spy={true} smooth={true} duration={1200} className="appBarLink" >
+            <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLink" >
               Servicios
             </Link>
-            <Link to="contacto" spy={true} smooth={true} duration={1250} className="appBarLink">
+            <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLink">
               Contacto
             </Link>
           </div>  
