@@ -12,8 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip'; */
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import * as Scroll from 'react-scroll';
-import {Link, animateScroll as scroll} from 'react-scroll';
+/* import * as Scroll from 'react-scroll'; */
+import {Link/* , animateScroll as scroll */} from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 /* import { Link , NavLink } from "react-router-dom"; */
 
@@ -39,7 +39,6 @@ const theme = createTheme({
   },
 });
 const pages = ['Nosotros', 'Galeria', 'Super 8mm', 'Servicios', 'Contacto'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,9 +47,9 @@ const NavBar = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
+  /* const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
-  };
+  }; */
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -60,14 +59,14 @@ const NavBar = () => {
     setAnchorElUser(null);
   };
 
-  function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); }
+  /* function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); } */
  
 
   return (
     <ThemeProvider theme={theme}>
-    <AppBar position="sticky" className='appBar' color='white' sx={{ boxShadow:'none'  }}>
+    <AppBar position="sticky" className='appBar' color='white' sx={{ boxShadow:'none', paddingTop:'1em' }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{  height:"2.5em", minHeight:"unset !important" }}>
           <Box sx={{ flexGrow: 1, boxShadow:'none' , display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
