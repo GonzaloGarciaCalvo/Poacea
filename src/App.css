@@ -47,24 +47,36 @@
   padding-right: 3em;
 }
 /* NOSOTROS */
-.circleContainer {
+/* .circleContainer {
   width: 40vw;
   height: 40vw;
-  /* padding-left: 5em; */
   padding-right: 2em;
-  /* margin: 3em; */
   display: flex;
   flex-direction: row;
   justify-content: end;
+} */
+.circleContainer {
+  width: 40vw;
+  height: 40vw;
+
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .boxImage {
-  width: 100%;
-  height: 100%;
-  margin:4em 0 4em 4m;
-  position:relative
+  width: 90%;
+  height: 90%;
+  margin:0em;
+  position:relative;
+  padding-left: 1em;
 }
 .circleImg {
-  width: 92.1%;
+  /* width: 92.1%; */
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -72,17 +84,36 @@
   border-radius: 0;
   
 }
+
+/* .boxImage {
+  width: 100%;
+  height: 100%;
+  margin:4em 0 4em 4m;
+  position:relative
+} */
+/* .circleImg {
+  width: 92.1%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 0;
+  border-radius: 0;
+} */
 .uniformCircle {
-  width: 84.2%;
+  /* width: 84.2%; */
+  width: 73.13%;
   /* position: absolute; top: 12.5%; right: 25%; */
-  position: absolute; top: 12%; right: 22%;
+  /* position: absolute; top: 12%; right: 22%; */
+  position: absolute; top: 10%; right: 33%;
   z-index: -2;
 }
 .mixColoredCircle{
   width: 84.2%;
+  width: 73.13%;
   border-radius: 50%;
   /* position: absolute; top: 12.5%; right: 25%; */
-  position: absolute; top: 12%; right: 22%;
+  /* position: absolute; top: 12%; right: 22%; */
+  position: absolute; top: 10%; right: 33%;
   z-index: 2;
   /* display: block; */
 }
@@ -90,8 +121,10 @@
   display:none
 }
 .smallCircle {
-  width: 30%;
-  position: absolute; top: -6.5%; left: 63%;
+ /*  width: 30%; */
+  width: 21.34%;
+  /* position: absolute; top: -6.5%; left: 63%; */
+  position: absolute; top: -6.5%; left: 57%;
   
 }
 .mixColoredCircle:hover {
@@ -100,3 +133,82 @@
 .boxImage:hover > .mixColoredCircle{
   opacity: 0;
 } 
+
+/* FRANCISCO*/
+
+.circleContainer__francisco {
+  width: 40vw;
+  height: 40vw;
+
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.boxImage__francisco {
+  width: 90%;
+  height: 90%;
+  margin:0em;
+  position:relative;
+  padding-left: 1em;
+}
+.circleImg__francisco {
+  /* width: 92.1%; */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 0;
+  border-radius: 0;
+  
+}
+.uniformCircle__francisco {
+  /* width: 84.2%; */
+  width: 68%;
+   position: absolute; bottom: 34.5%; left: 19.5%;
+  z-index: -2;
+}
+.mixColoredCircle__francisco{
+  /* width: 84.2%; */
+  width: 68%;
+  border-radius: 50%;
+     position: absolute; bottom: 34.5%; left: 19.5%;
+  z-index: 2;
+  /* display: block; */
+}
+.mixColoredCircleInvisible__francisco {
+  display:none
+}
+.smallCircle__francisco {
+ /*  width: 30%; */
+  width: 21.34%;
+  /* position: absolute; top: -6.5%; left: 63%; */
+  position: absolute; top: -6.5%; left: 57%;
+}
+.mixColoredCircle__francisco:hover {
+  opacity: 0;
+}
+.boxImage__francisco:hover > .mixColoredCircle__francisco{
+  opacity: 0;
+} 
+
+/* GALERIA COMPONENT*/
+.containerFotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-b;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+.boxFotoGaleria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 20%;
+}
+.fotoGaleria {
+  width: 75% !important;
+}
