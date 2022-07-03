@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0887490-f77a-42f1-820f-62263ae32ac5/deploy-status)](https://app.netlify.com/sites/mellifluous-monstera-cd9060/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
