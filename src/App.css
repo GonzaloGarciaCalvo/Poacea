@@ -43,7 +43,7 @@
   font-size:3.25em ;
   font-family: 'Inika', serif;
   color: var(--redBrand);
-  padding-left: 2em;
+  padding-left: 1.8em;
   padding-right: 3em;
 }
 /* NOSOTROS */
@@ -139,7 +139,6 @@
 .circleContainer__francisco {
   width: 40vw;
   height: 40vw;
-
   padding-right: 3em;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -182,11 +181,11 @@
 .mixColoredCircleInvisible__francisco {
   display:none
 }
-.smallCircle__francisco {
+.smallCircle_francisco {
  /*  width: 30%; */
   width: 21.34%;
   /* position: absolute; top: -6.5%; left: 63%; */
-  position: absolute; top: -6.5%; left: 57%;
+  position: absolute; top: 61%; left: 4.5%;
 }
 .mixColoredCircle__francisco:hover {
   opacity: 0;
@@ -199,9 +198,9 @@
 .containerFotos {
   display: flex;
   flex-direction: row;
-  justify-content: space-b;
-  padding-left: 6em;
-  padding-right: 6em;
+  justify-content: center;
+  padding-left: 8em;
+  padding-right: 8em;
 }
 .boxFotoGaleria {
   display: flex;
@@ -210,5 +209,6 @@
   max-width: 20%;
 }
 .fotoGaleria {
-  width: 75% !important;
+  width: 85% !important;
+  margin-bottom: 2em;
 }

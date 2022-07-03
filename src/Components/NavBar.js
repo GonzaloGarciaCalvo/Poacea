@@ -7,15 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-/* import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip'; */
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-/* import * as Scroll from 'react-scroll'; */
-import {Link/* , animateScroll as scroll */} from 'react-scroll';
+import {Link} from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-/* import { Link , NavLink } from "react-router-dom"; */
 
 const theme = createTheme({
   status: {
@@ -42,7 +37,7 @@ const pages = ['Nosotros', 'Galeria', 'Super 8mm', 'Servicios', 'Contacto'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+/*   const [anchorElUser, setAnchorElUser] = React.useState(null); */
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -55,9 +50,9 @@ const NavBar = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
+  /* const handleCloseUserMenu = () => {
     setAnchorElUser(null);
-  };
+  }; */
 
   /* function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); } */
  

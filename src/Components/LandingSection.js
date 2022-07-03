@@ -1,13 +1,10 @@
 
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import React, { useState, Suspense, lazy  } from 'react';
+import React, { /* useState, */ Suspense, lazy  } from 'react';
 import Grid from '@mui/material/Grid';
-import { mytheme } from '../Style.js';
 import CircularIndeterminate from './Spinner'
-import {Image} from 'mui-image';
 import useNearScreen from '../Hooks/UseNearScreen'
-import LazyLoad from 'react-lazyload';
 import Servicios from './Servicios.js';
 /* import Galeria from './Galeria.js'; */
 
@@ -18,21 +15,20 @@ import Servicios from './Servicios.js';
 const LandingSection = () => {
 
   const {isNearScreen, fromRef} = useNearScreen({
-    distance: '300px'
+    distance: '400px'
   })
-  const SeccionGaleria = React.lazy(
+  const SeccionGaleria = lazy(
     () => import('./Galeria')
   )
 
-
+// COMANTADO: funciona para ocultar o mostrar imagen con click
   /* let circulo1 = document.getElementById("mixColoredCircle")
     console.log(circulo1)
     circulo1.addEventListener("click",setVisivility )
     let circulo2 = document.getElementById("circleImg")
     console.log(circulo2)
     circulo2.addEventListener("click",setVisivility ) */
-    const redBrand = mytheme.redBrand
-     const [display, setDisplay] = useState(true) 
+     /* const [display, setDisplay] = useState(true)  */
     /*function setVisivility(){
       if (display){
         setDisplay(false)
@@ -79,9 +75,9 @@ const LandingSection = () => {
 							/>
 							<img
 								src="images/loreto/Ellipse34.webp"
-								/* onClick={setVisivility} */ className={
+								/* onClick={setVisivility} */ /* className={
 									display ? "mixColoredCircle" : "mixColoredCircleInvisible"
-								}
+								} */ className="mixColoredCircle"
 								alt="composicion de imagen"
 							/>
 							<img
@@ -126,11 +122,12 @@ const LandingSection = () => {
 							/>
 							<img
 								src="images/francisco/ellipse33.webp"
-								/* onClick={setVisivility} */ className={
+								/* onClick={setVisivility} */ /* className={
 									display
 										? "mixColoredCircle__francisco"
 										: "mixColoredCircleInvisible"
-								}
+								} */
+								className='mixColoredCircle__francisco'
 								alt="composicion de imagen"
 							/>
 							<img
@@ -140,7 +137,7 @@ const LandingSection = () => {
 							/>
 							<img
 								src="images/francisco/ellipse31.webp"
-								alt="composicion de imagen"
+								alt="composicion de imagen Francisco"
 								className="smallCircle_francisco"
 							/>
 						</Box>
@@ -177,6 +174,14 @@ const LandingSection = () => {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
 				</p>
 			</div> */}
+			<div id="galeria" ref={fromRef} className="divConRef galery"  style={{margin:"6em"}} >
+			<h1 className="tituloSeccion">GALERIA</h1>
+				<Suspense>
+					<div>
+          {isNearScreen ? <SeccionGaleria /> : <CircularIndeterminate />}
+					</div>
+				</Suspense>
+			</div>
 			<div id="super8" style={{ height: 300, margin: "6em" }}>
 				<h1 className="tituloSeccion">SUPER 8MM</h1>
 				<p>
@@ -197,16 +202,9 @@ const LandingSection = () => {
 			<Servicios />
 			<div id="contacto" style={{ height: 300, margin: "6em" }}>
 				<h1 className="tituloSeccion">CONTACTO</h1>
-				<p>Telefono</p>
 			</div>
 
-			<div ref={fromRef} className="divConRef galery"  style={{height:300}} id="galeria">
-				<Suspense>
-					<div>
-          {isNearScreen ? <SeccionGaleria /> : <CircularIndeterminate />}
-					</div>
-				</Suspense>
-			</div>
+			
 		</>
 	);
 }
