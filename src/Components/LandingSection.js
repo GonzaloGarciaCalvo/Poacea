@@ -110,6 +110,7 @@ const LandingSection = () => {
 						dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem
 						maxime minima animi.
 					</p>
+					<img src="images/revelar.webp" className="revelar"/>
 				</Grid>
 				{/***  Francisco ***/}
 				<Grid item xs={5}>
@@ -163,8 +164,32 @@ const LandingSection = () => {
 				</Grid>
 			</Grid>
 			<Box
-				sx={{ width: "100%", height: "7rem", backgroundColor: "#F90606" }}
-			></Box>
+				sx={{ width: "100%", height: "7.2rem", backgroundColor: "#F90606" }}
+				className="upperBanner"
+			>
+				<div className="upperBanner__boxItem">
+					<img src="../../images/icons_upperBanner/upper_instagram.svg" alt='link a instagram'/>
+					<div>
+						<p>Stalkéanos</p>
+						<p>@ppoaceaa</p>
+					</div>
+				</div>
+				<div className="upperBanner__boxItem">
+					<img src="../../images/icons_upperBanner/upper_email.svg" alt='link a instagram'/>
+					<div>
+						<p>Cotiza</p>
+						<p>info@poacea.cl</p>
+					</div>
+				</div>
+				<div className="upperBanner__boxItem">
+					<img src="../../images/icons_upperBanner/upper_whatsapp.svg" alt='link a instagram'/>
+					<div>
+						<p>Contáctanos</p>
+						<p>+56 997 773 406</p>
+					</div>
+				</div>
+			</Box>
+	
 		{/* 	<div id="galeria" style={{ height: 100, margin: "6em" }}>
 				<h1 className="tituloSeccion">GALERIA</h1>
 				<p>
@@ -174,7 +199,7 @@ const LandingSection = () => {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
 				</p>
 			</div> */}
-			<div id="galeria" ref={fromRef} className="divConRef galery"  style={{margin:"6em"}} >
+			<div id="galeria" ref={fromRef} className="divConRef galery"  style={{margin:"0em"}} >
 			<h1 className="tituloSeccion">GALERIA</h1>
 				<Suspense>
 					<div>
@@ -204,7 +229,10 @@ const LandingSection = () => {
 				<h1 className="tituloSeccion">CONTACTO</h1>
 			</div>
 
-			
+			<div className='boxAdorno'>
+							<img src="../../images/adornosGaleria/ellipse26.png" className="medioAdornoGaleria1"/>
+							<img src="../../images/adornosGaleria/ellipse25.png"  className="medioAdornoGaleria2"/>
+			</div>
 		</>
 	);
 }
