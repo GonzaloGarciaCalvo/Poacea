@@ -110,7 +110,7 @@ const LandingSection = () => {
 						dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem
 						maxime minima animi.
 					</p>
-					<img src="images/revelar.webp" className="revelar"/>
+					<img src="images/revelar.webp" className="revelar" alt='icono revelar'/>
 				</Grid>
 				{/***  Francisco ***/}
 				<Grid item xs={5}>
@@ -229,10 +229,10 @@ const LandingSection = () => {
 				<h1 className="tituloSeccion">CONTACTO</h1>
 			</div>
 
-			<div className='boxAdorno'>
+			{/* <div className='boxAdorno'>
 							<img src="../../images/adornosGaleria/ellipse26.png" className="medioAdornoGaleria1"/>
 							<img src="../../images/adornosGaleria/ellipse25.png"  className="medioAdornoGaleria2"/>
-			</div>
+			</div> */}
 		</>
 	);
 }

@@ -1,9 +1,5 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import Modal from '@mui/material/Modal';
-import Typography  from '@mui/material/Typography';
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 import BasicModal from './Modal';
 
 export const Galeria = () => {
@@ -35,9 +31,9 @@ export const Galeria = () => {
 					<Grid item xs={3} className='boxFotoGaleria'>
 						<img src="../../images/dibujos/d8.webp" className='fotoGaleria' alt="foto"  />
 					</Grid>
-					<img src="../../images/adornoGaleria.png" className="adornoGaleria1"/>
-					<img src="../../images/adornoGaleria.png" className="adornoGaleria2"/>
-					<img src="../../images/adornoGaleria.png" className="adornoGaleria3"/>
+					<img src="../../images/adornoGaleria.png" className="adornoGaleria1" alt="adorno"/>
+					<img src="../../images/adornoGaleria.png" className="adornoGaleria2" alt="adorno"/>
+					<img src="../../images/adornoGaleria.png" className="adornoGaleria3" alt="adorno"/>
 				</Grid>
 	);
 }
