@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import {Link} from 'react-scroll';
 
 const Header = () => {
@@ -32,6 +32,6 @@ const Header = () => {
 			</li>
 		</ul>
 	);
-}
+} */
 
 export default Header

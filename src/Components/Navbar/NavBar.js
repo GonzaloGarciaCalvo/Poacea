@@ -11,6 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './navbar.css'
 
 const theme = createTheme({
   status: {
@@ -91,14 +92,31 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+            <div className='MenuMovil'>
+              <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLinkMovil">
+                Nosotros
+              </Link>
+              <Link to="galeria" spy={true} smooth={true} className="appBarLinkMovil">
+                Galeria
+              </Link>
+              <Link to="super8" spy={true} smooth={true} className="appBarLinkMovil">
+                Super 8mm
+              </Link>
+              <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLinkMovil" >
+                Servicios
+              </Link>
+              <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLinkMovil">
+                Contacto
+              </Link>
+            </div>
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem> // EDITAR CON LINKS ESTATICOS
-              ))}
+              ))} */}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           
           <Box sx={{ justifyContent:'space-evenly', width:'100%',marginX:'3em', display: { xs: 'none', md: 'flex' } }}>
             

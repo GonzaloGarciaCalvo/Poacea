@@ -1,0 +1,29 @@
+/**** NAVBAR ****/
+.appBar {
+  box-shadow: none;
+  color: transparent;
+}
+.appBarLink {
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.appBarLink:hover, .appBarLink:active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.MenuMovil {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.appBarLinkMovil{
+  font-size: 1.3em;
+  color: var(--redBrand);
+}
+.css-xo2ytq-MuiToolbar-root {
+  /* HEIGHT de AppBar */
+  min-height: 2.5em !important;
+  height: 2.5em;
+}

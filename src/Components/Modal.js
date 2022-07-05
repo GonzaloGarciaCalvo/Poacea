@@ -9,25 +9,31 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  maxWidth:'100%',
+   width: {xs:'95%', md:'30%', xl:'25%', xxl:'30%'}, 
+  /*maxWidth:'100%', */
   bgcolor: 'background.paper',
   border: '0px solid #000',
   boxShadow: 0,
-  p: 4,
+  p: 1,
   outline: 'none',
 };
 
 export default function BasicModal({imgUrl}) {
 
-  let ancho = window.innerWidth;
-  console.log("ancho, ", ancho)
+  let isMobile = window.matchMedia("only screen and (max-width: 480px)").matches; //verifica si cumple condicion
+  /* let ancho = window.innerWidth;  ancho de la pantalla en px, no sirve*/
+  /* console.log("ancho, ", ancho) */
   const [open, setOpen] = React.useState(false);
   /* const handleOpen = () =>if (ancho > 600) setOpen(true); */
-  const handleOpen = () => { if (ancho > 600) setOpen(true)};
+  const handleOpen = () => { 
+    if (!isMobile) {
+      /* (ancho > 200) {*/
+      setOpen(true);
+      console.log("pantalla en true")
+  }  else {console.log("no es movil")};
+  }
   const handleClose = () => setOpen(false);
 
- 
 
   return (
     
@@ -36,9 +42,9 @@ export default function BasicModal({imgUrl}) {
       <Modal
         open={open}
         onClose={handleClose}
-        /* aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description" */
-
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        /* sx={{width:{xs:'100%', md:'40%'}}} */
       >
         <Box sx={style}>
           <img src={imgUrl}  className='fotoGaleriaAmpliada' alt="dibujo"/>

@@ -4,34 +4,12 @@
   --redBrand: #F90606;
 }
 
-
+/*** GENERALES ***/
 .logoSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* NAVBAR */
-.appBar {
-  box-shadow: none;
-  color: transparent;
-}
-.appBarLink {
-  margin-left: 2em;
-  margin-right: 2em;
-  text-align: center;
-  font-size: 1.2em;
-}
-.appBarLink:hover, .appBarLink:active {
-  text-decoration: underline;
-  text-underline-position: under;
-}
-.css-xo2ytq-MuiToolbar-root {
-  /* HEIGHT de AppBar */
-  min-height: 2.5em !important;
-  height: 2.5em;
-}
-
-
 .tituloSeccion {
   font-size: 4.6em;
   font-family: 'Inika', serif;
@@ -47,7 +25,8 @@
   padding-right: 2em;
   margin-bottom: 0.5em;
 }
-/* NOSOTROS */
+
+/***** NOSOTROS *****/
 /* .circleContainer {
   width: 40vw;
   height: 40vw;
@@ -56,10 +35,13 @@
   flex-direction: row;
   justify-content: end;
 } */
+.tituloNosotros {
+  text-align: end;
+  padding-right: 0.3em;
+}
 .circleContainer {
   width: 40vw;
   height: 40vw;
-
   padding-right: 3em;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -123,7 +105,7 @@
 }
 .smallCircle {
  /*  width: 30%; */
-  width: 21.34%;
+  width: 23%;
   /* position: absolute; top: -6.5%; left: 63%; */
   position: absolute; top: -6.5%; left: 57%;
   
@@ -140,7 +122,6 @@
 }
 
 /* FRANCISCO*/
-
 .circleContainer__francisco {
   width: 40vw;
   height: 40vw;
@@ -188,7 +169,7 @@
 }
 .smallCircle_francisco {
  /*  width: 30%; */
-  width: 21.34%;
+  width: 22.5%;
   /* position: absolute; top: -6.5%; left: 63%; */
   position: absolute; top: 61%; left: 4.5%;
 }
@@ -198,8 +179,73 @@
 .boxImage__francisco:hover > .mixColoredCircle__francisco{
   opacity: 0;
 } 
+/* Cristina */
+.circleContainer__cristina {
+  width: 40vw;
+  height: 40vw;
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.boxImage__francisco {
+  width: 90%;
+  height: 90%;
+  margin:0em;
+  position:relative;
+  padding-left: 1em;
+}
+.circleImg__francisco {
+  /* width: 92.1%; */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 0;
+  border-radius: 0;
+  
+}
+.uniformCircle__cristina {
+  /* width: 84.2%; */
+  width: 68%;
+   position: absolute; bottom: 32%; right: 36%;
+  z-index: -2;
+}
+.mixColoredCircle__cristina{
+  /* width: 84.2%; */
+  width: 68%;
+  border-radius: 50%;
+     position: absolute; bottom: 32%; right: 36%;
+  z-index: 2;
+  /* display: block; */
+}
+.mixColoredCircleInvisible__francisco {
+  display:none
+}
+.smallCircle_cristina {
+ /*  width: 30%; */
+  width: 23.4%;
+  /* position: absolute; top: -6.5%; left: 63%; */
+  position: absolute; top: 68%; right: 26%;
+}
+.mixColoredCircle__cristina:hover {
+  opacity: 0;
+}
+.boxImage__francisco:hover > .mixColoredCircle__francisco{
+  opacity: 0;
+} 
 
-/* GALERIA COMPONENT*/
+
+
+/**** GALERIA COMPONENT  ****/
+.tituloGaleria {
+  padding-right: 9.3%;
+  text-align: end;
+  margin-bottom: 2em;
+}
 .containerFotos {
   display: flex;
   flex-direction: row;
@@ -207,14 +253,14 @@
  /*  padding-left: 7em;
   padding-right: 7em; */
   padding-left: 8%;
-padding-right: 8%;
+  padding-right: 8%;
   position: relative;
 }
 .boxFotoGaleria {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 20%;
+  /* max-width: 20%; */
 }
 .fotoGaleria {
   width: 85% !important;
@@ -240,20 +286,28 @@ padding-right: 8%;
   height:79px;
 }
 .adornoGaleria1 {
-  width: 12%;
+  width: 11.2%;
   position:absolute;top: 43%; left: 3%;
   z-index:-1;
   transform: rotate(100deg);
 }
 .adornoGaleria2 {
-  position:absolute;
+  width: 10%;
+  position:absolute;top: -6%; left: 84%;
   z-index:-1;
+  transform: rotate(21deg);
+}
+.adornoGaleria3 {
+  width: 11.2%;
+  position:absolute;top: 88%; left: 83%;
+  z-index:-1;
+  transform: rotate(200deg);
 }
 .fotoGaleriaAmpliada {
   width: 100%;
 }
 
-/* UPPER BANNER*/
+/*** UPPER BANNER ***/
 .upperBanner {
   display: flex;
   flex-direction: row;
@@ -268,9 +322,9 @@ padding-right: 8%;
   width: 1.8em;
 }
 .upperBanner__boxItem div p {
- color: white;
- font-size: 0.9em;
- margin-bottom:0.3em;
- margin-top: 0.3em;
- margin-left: 0.4em;
+  color: white;
+  font-size: 0.9em;
+  margin-bottom:0.3em;
+  margin-top: 0.3em;
+  margin-left: 0.4em;
 }

@@ -1,0 +1,66 @@
+/**** GALERIA COMPONENT  ****/
+.tituloGaleria {
+  padding-right: 9.3%;
+  text-align: end;
+  margin-bottom: 2em;
+}
+.containerFotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ /*  padding-left: 7em;
+  padding-right: 7em; */
+  padding-left: 8%;
+  padding-right: 8%;
+  position: relative;
+}
+.boxFotoGaleria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* max-width: 20%; */
+}
+.fotoGaleria {
+  width: 85% !important;
+  margin-bottom: 2.5em;
+}
+.boxAdorno {
+  position: relative;
+  padding-bottom: 0em;
+  margin-left: 3em;
+  width: 79px;
+  height: 79px;
+}
+.medioAdornoGaleria1 {
+  position: absolute; 
+  z-index: 2;
+  width:52px;
+  height:52px;
+}
+.medioAdornoGaleria2 {
+  position: absolute;left: 38px; bottom:12px;
+  z-index: 1;
+  width:79px;
+  height:79px;
+}
+.adornoGaleria1 {
+  width: 11.2%;
+  position:absolute;top: 43%; left: 3%;
+  z-index:-1;
+  transform: rotate(100deg);
+}
+.adornoGaleria2 {
+  width: 10%;
+  position:absolute;top: -6%; left: 84%;
+  z-index:-1;
+  transform: rotate(21deg);
+}
+.adornoGaleria3 {
+  width: 11.2%;
+  position:absolute;top: 88%; left: 83%;
+  z-index:-1;
+  transform: rotate(200deg);
+}
+.fotoGaleriaAmpliada {
+  width: 100%;
+}

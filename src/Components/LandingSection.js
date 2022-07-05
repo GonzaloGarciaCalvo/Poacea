@@ -1,11 +1,13 @@
 
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import React, { /* useState, */ Suspense, lazy  } from 'react';
-import Grid from '@mui/material/Grid';
+import React, {  Suspense, lazy  } from 'react';
+/* import Grid from '@mui/material/Grid'; */
 import CircularIndeterminate from './Spinner'
 import useNearScreen from '../Hooks/UseNearScreen'
 import Servicios from './Servicios.js';
+import Nosotros from './Nosotros/Nosotros';
+import UpperBanner from './UpperBanner/UpperBanner';
 /* import Galeria from './Galeria.js'; */
 
 
@@ -14,13 +16,12 @@ import Servicios from './Servicios.js';
 
 const LandingSection = () => {
 
-	let ancho1 = window.innerWidth;
-  console.log("ancho1, ", ancho1)
+	
   const {isNearScreen, fromRef} = useNearScreen({
     distance: '400px'
   })
   const SeccionGaleria = lazy(
-    () => import('./Galeria')
+    () => import('./Galeria/Galeria')
   )
 
 // COMANTADO: funciona para ocultar o mostrar imagen con click
@@ -49,7 +50,8 @@ const LandingSection = () => {
 
   return (
 		<>
-			<div id="home" style={{ height: "2em" }}></div>
+		<Suspense>
+			
 			<div
 				className="logoSection"
 				style={{ marginBottom: "1em", marginTop: "3em" }}
@@ -57,158 +59,19 @@ const LandingSection = () => {
 				<Avatar
 					alt="logo Poacea"
 					src="images/ESTUDIO1.png"
-					sx={{ width: "25em", height: "25em", borderRadius: 0 }}
+					sx={{ width: "27%", height: "27%", borderRadius: 0 }}
 					// LOGO CON MALA CALIDAD, fake svg
 				/>
 			</div>
-
-			<Grid container id="nosotros" style={{}}>
-				<Grid item xs={12}>
-					<h1 className="tituloSeccion">Nosotros</h1>
-				</Grid>
-
-				<Grid item xs={5}>
-					<Box className="circleContainer">
-						<Box className="boxImage">
-							<img
-								src="images/loreto/Mask_group.webp"
-								/* onClick={setVisivility} */ className="circleImg"
-								alt="logo Poacea"
-							/>
-							<img
-								src="images/loreto/Ellipse34.webp"
-								/* onClick={setVisivility} */ /* className={
-									display ? "mixColoredCircle" : "mixColoredCircleInvisible"
-								} */ className="mixColoredCircle"
-								alt="composicion de imagen"
-							/>
-							<img
-								src="images/loreto/Ellipse37.png"
-								/* onClick={setVisivility} */ className="uniformCircle"
-								alt="composicion de imagen"
-							/>
-							<img
-								src="images/loreto/Ellipse36.png"
-								alt="composicion de imagen"
-								className="smallCircle"
-							/>
-						</Box>
-					</Box>
-				</Grid>
-				<Grid item xs={7}>
-					<h2 className="subtituloSeccion">LORETO CARRASCO</h2>
-					<p style={{ paddingLeft: "6em", paddingRight: "6em" }}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-						repellendus. Totam nihil similique a repellat minus dolor amet
-						quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Id, repellendus. Totam nihil similique a repellat minus dolor
-						amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. repellendus. Totam nihil similique a repellat minus
-						dolor amet quasi. Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Id, repellendus. Totam nihil similique a repellat minus dolor
-						amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. repellendus. Totam nihil similique a repellat minus
-						dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem
-						maxime minima animi.
-					</p>
-					<img src="images/revelar.webp" className="revelar" alt='icono revelar'/>
-				</Grid>
-				{/***  Francisco ***/}
-				<Grid item xs={5}>
-					<Box className="circleContainer__francisco">
-						<Box className="boxImage__francisco">
-							<img
-								src="images/francisco/ellipse38.webp"
-								/* onClick={setVisivility} */ className="circleImg__francisco"
-								alt="logo Poacea"
-							/>
-							<img
-								src="images/francisco/ellipse33.webp"
-								/* onClick={setVisivility} */ /* className={
-									display
-										? "mixColoredCircle__francisco"
-										: "mixColoredCircleInvisible"
-								} */
-								className='mixColoredCircle__francisco'
-								alt="composicion de imagen"
-							/>
-							<img
-								src="images/francisco/ellipse40.png"
-								/* onClick={setVisivility} */ className="uniformCircle__francisco"
-								alt="composicion de imagen"
-							/>
-							<img
-								src="images/francisco/ellipse31.webp"
-								alt="composicion de imagen Francisco"
-								className="smallCircle_francisco"
-							/>
-						</Box>
-					</Box>
-				</Grid>
-				<Grid item xs={7}>
-					<h2 className="subtituloSeccion">FRANCISCO ORTEGA</h2>
-					<p style={{ paddingLeft: "6em", paddingRight: "6em" }}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-						repellendus. Totam nihil similique a repellat minus dolor amet
-						quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Id, repellendus. Totam nihil similique a repellat minus dolor
-						amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. repellendus. Totam nihil similique a repellat minus
-						dolor amet quasi. Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Id, repellendus. Totam nihil similique a repellat minus dolor
-						amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime
-						minima animi. repellendus. Totam nihil similique a repellat minus
-						dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem
-						maxime minima animi.
-					</p>
-				</Grid>
-			</Grid>
-			<Box
-				sx={{ width: "100%", height: "7.2rem", backgroundColor: "#F90606" }}
-				className="upperBanner"
-			>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_instagram.svg" alt='link a instagram'/>
-					<div>
-						<p>Stalkéanos</p>
-						<p>@ppoaceaa</p>
-					</div>
-				</div>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_email.svg" alt='link a instagram'/>
-					<div>
-						<p>Cotiza</p>
-						<p>info@poacea.cl</p>
-					</div>
-				</div>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_whatsapp.svg" alt='link a instagram'/>
-					<div>
-						<p>Contáctanos</p>
-						<p>+56 997 773 406</p>
-					</div>
-				</div>
-			</Box>
-	
-		{/* 	<div id="galeria" style={{ height: 100, margin: "6em" }}>
-				<h1 className="tituloSeccion">GALERIA</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-					repellendus. Totam nihil similique a repellat minus dolor amet quasi.
-					Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-				</p>
-			</div> */}
+			<UpperBanner />
+			<Nosotros />
 			<div id="galeria" ref={fromRef} className="divConRef galery"  style={{margin:"0em"}} >
-			<h1 className="tituloSeccion">GALERIA</h1>
-				<Suspense>
+			<h1 className="tituloSeccion tituloGaleria">GALERIA</h1>
 					<div>
           {isNearScreen ? <SeccionGaleria /> : <CircularIndeterminate />}
 					</div>
-				</Suspense>
 			</div>
+
 			<div id="super8" style={{ height: 300, margin: "6em" }}>
 				<h1 className="tituloSeccion">SUPER 8MM</h1>
 				<p>
@@ -235,6 +98,7 @@ const LandingSection = () => {
 							<img src="../../images/adornosGaleria/ellipse26.png" className="medioAdornoGaleria1"/>
 							<img src="../../images/adornosGaleria/ellipse25.png"  className="medioAdornoGaleria2"/>
 			</div> */}
+		</Suspense>	
 		</>
 	);
 }
