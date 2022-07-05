@@ -7,7 +7,7 @@ export const Galeria = () => {
   return (
 				<Grid container className='containerFotos' id="galeria">
 					<Grid item xs={3} className='boxFotoGaleria' >
-					  <BasicModal imgUrl={"../../images/dibujos/d1.webp"} />
+					  <BasicModal imgUrl={"../../images/dibujos/d1.webp"} sx={{width:"100%"}}/>
 						{/* <img  src="../../images/dibujos/d1.webp"  className='fotoGaleria' alt="foto"/> */}
 					</Grid>
 					<Grid item xs={3} className='boxFotoGaleria'>

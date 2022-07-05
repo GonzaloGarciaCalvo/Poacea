@@ -249,6 +249,10 @@ padding-right: 8%;
   position:absolute;
   z-index:-1;
 }
+.fotoGaleriaAmpliada {
+  width: 100%;
+}
+
 /* UPPER BANNER*/
 .upperBanner {
   display: flex;

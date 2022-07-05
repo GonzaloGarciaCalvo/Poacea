@@ -10,10 +10,12 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
+  maxWidth:'100%',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
+  border: '0px solid #000',
+  boxShadow: 0,
   p: 4,
+  outline: 'none',
 };
 
 export default function BasicModal({imgUrl}) {
@@ -22,24 +24,24 @@ export default function BasicModal({imgUrl}) {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-
+    
+    <>
       <img src={imgUrl} onClick={handleOpen} className='fotoGaleria' alt="dibujo"/>
       <Modal
         open={open}
         onClose={handleClose}
         /* aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description" */
+
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <img src={imgUrl}  className='fotoGaleriaAmpliada' alt="dibujo"/>
+          <Typography id="modal-modal-description" sx={{ mt: 1 }}>
+            Duis mollis, est no
           </Typography>
         </Box>
       </Modal>
-    </div>
+    
+    </>
   );
 }
