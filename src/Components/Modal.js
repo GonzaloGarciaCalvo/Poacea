@@ -19,9 +19,15 @@ const style = {
 };
 
 export default function BasicModal({imgUrl}) {
+
+  let ancho = window.innerWidth;
+  console.log("ancho, ", ancho)
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  /* const handleOpen = () =>if (ancho > 600) setOpen(true); */
+  const handleOpen = () => { if (ancho > 600) setOpen(true)};
   const handleClose = () => setOpen(false);
+
+ 
 
   return (
     

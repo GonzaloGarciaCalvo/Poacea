@@ -14,6 +14,8 @@ import Servicios from './Servicios.js';
 
 const LandingSection = () => {
 
+	let ancho1 = window.innerWidth;
+  console.log("ancho1, ", ancho1)
   const {isNearScreen, fromRef} = useNearScreen({
     distance: '400px'
   })
