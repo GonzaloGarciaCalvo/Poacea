@@ -1,35 +1,59 @@
-import Box from '@mui/material/Box';
 
-import React from 'react'
-
+import { Container } from '@mui/system';
+import "./UperBanner.scss"
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 function UpperBanner() {
   return (
-    <Box
-				sx={{ width: "100%", height: "7.2rem", backgroundColor: "#F90606" }}
-				className="upperBanner"
-			>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_instagram.svg" alt='link a instagram'/>
+	<div className="boxInfo">
 				<div>
-						<p>Stalkéanos</p>
-						<p>@ppoaceaa</p>
-					</div>
+					<a href='https://www.instagram.com/ppoaceaa/' target="_blank">
+						<InstagramIcon />
+						<p>Stalkéanos <br/>
+						@ppoaceaa</p>
+					</a>
 				</div>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_email.svg" alt='link a instagram'/>
-					<div>
-						<p>Cotiza</p>
-						<p>info@poacea.cl</p>
-					</div>
+				<div>
+					<a href='mailto:info@poacea.cl'>
+					<EmailIcon />
+					<p>Cotizá <br/>
+					info@poacea.cl</p>
+					</a>
 				</div>
-				<div className="upperBanner__boxItem">
-					<img src="../../images/icons_upperBanner/upper_whatsapp.svg" alt='link a instagram'/>
-					<div>
-						<p>Contáctanos</p>
-						<p>+56 997 773 406</p>
-					</div>
+				<div>
+					<a href="https://wa.me/+56997773406" target="_blank">
+						<WhatsAppIcon />
+						<p>Contáctanos <br/>+56 997 773 406</p>
+					</a>
 				</div>
-			</Box>
+			</div>
+    // <Box
+	// 			sx={{ width: "100%", height: "7.2rem", backgroundColor: "#F90606" }}
+	// 			className="upperBanner"
+	// 		>
+	// 			<div className="upperBanner__boxItem">
+	// 				<img src="../../images/icons_upperBanner/upper_instagram.svg" alt='link a instagram'/>
+	// 			<div>
+	// 					<p>Stalkéanos</p>
+	// 					<p>@ppoaceaa</p>
+	// 				</div>
+	// 			</div>
+	// 			<div className="upperBanner__boxItem">
+	// 				<img src="../../images/icons_upperBanner/upper_email.svg" alt='link a instagram'/>
+	// 				<div>
+	// 					<p>Cotiza</p>
+	// 					<p>info@poacea.cl</p>
+	// 				</div>
+	// 			</div>
+	// 			<div className="upperBanner__boxItem">
+	// 				<img src="../../images/icons_upperBanner/upper_whatsapp.svg" alt='link a instagram'/>
+	// 				<div>
+	// 					<p>Contáctanos</p>
+	// 					<p>+56 997 773 406</p>
+	// 				</div>
+	// 			</div>
+	// 		</Box>
   )
 }
 

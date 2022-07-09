@@ -11,14 +11,20 @@
   align-items: center;
 }
 .tituloSeccion {
-  font-size: 4.6em;
+  font-size: 4rem;
   font-family: 'Inika', serif;
   color: var(--redBrand);
-  margin-top: 1em;
+  
+  padding-top: 3rem;
+}
+@media (max-width:450px) {
+  .tituloSeccion{
+    font-size: 2.8rem;
+  }
 }
 .subtituloSeccion {
   /* font-size: 4.38em; *3/4*/
-  font-size:3.25em ;
+  font-size:3rem ;
   font-family: 'Inika', serif;
   color: var(--redBrand);
   padding-left: 1.8em;
@@ -38,6 +44,8 @@
 .tituloNosotros {
   text-align: end;
   padding-right: 0.3em;
+  padding-top: 2rem;
+  margin-left: 1rem;
 }
 .circleContainer {
   width: 40vw;
@@ -265,6 +273,7 @@
 .fotoGaleria {
   width: 85% !important;
   margin-bottom: 2.5em;
+  cursor:pointer
 }
 .boxAdorno {
   position: relative;

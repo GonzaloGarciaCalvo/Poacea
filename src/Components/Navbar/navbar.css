@@ -2,12 +2,16 @@
 .appBar {
   box-shadow: none;
   color: transparent;
+  background-color: white;
+  
 }
 .appBarLink {
   margin-left: 2em;
   margin-right: 2em;
   text-align: center;
   font-size: 1.2em;
+  cursor:pointer;
+  color: var(--redBrand);
 }
 .appBarLink:hover, .appBarLink:active {
   text-decoration: underline;
@@ -26,4 +30,16 @@
   /* HEIGHT de AppBar */
   min-height: 2.5em !important;
   height: 2.5em;
+}
+
+.ToolBar{
+  justify-content: center !important;
+}
+@media (max-width:900px) {
+  .ToolBar{
+    justify-content: start !important;
+  }
+}
+.linkResponsive{
+  cursor: pointer;
 }

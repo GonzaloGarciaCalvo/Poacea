@@ -1,4 +1,7 @@
 /**** GALERIA COMPONENT  ****/
+#galeria {
+  margin-top: -5rem;
+}
 .tituloGaleria {
   padding-right: 9.3%;
   text-align: end;
@@ -63,4 +66,7 @@
 }
 .fotoGaleriaAmpliada {
   width: 100%;
+}
+.loading{
+  margin: 0px auto
 }
