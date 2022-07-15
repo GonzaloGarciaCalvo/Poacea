@@ -57,15 +57,17 @@ const LandingSection = () => {
 
 	return (
     <main>
-			<div className="logoSection">			
-				<img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
+			<div className="logoSection">	
+			{/* Vercel jode con la ruta	 */}	
+				{/* <img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
 				<img src="images/frame.png" alt="logo Poacea images/frame.png" className='logoImg'/>
 				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
 				<img src="../../images/frame.png" alt="logo Poacea ../../images/frame.png" className='logoImg'/>
 				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
-				<img src="./frame.png" alt="logo Poacea ./frame.png" className='logoImg'/>
-				<img src="frame.png" alt="logo Poacea frame.png" className='logoImg'/>
-				<img src="/images/frame.png" alt="logo Poacea /images/frame.png" className='logoImg'/>
+				<img src="./frame2.png" alt="logo Poacea ./frame2.png" className='logoImg'/> */}
+				<img src="frame2.png" alt="logo Poacea frame2.png" className='logoImg'/>
+				{/* <img src="/images/frame.png" alt="logo Poacea /images/frame.png" className='logoImg'/>
+				<img src="/images/frame.png" alt="public/images/frame.png" className='logoImg'/> */}
 			</div>
 			<UpperBanner />
 			<Nosotros />
