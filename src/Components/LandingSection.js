@@ -57,14 +57,7 @@ const LandingSection = () => {
 	return (
     <main>
 			<div className="logoSection">
-				{/* <Avatar
-					alt="logo Poacea"
-					src="./images/frame.png"
-					sx={{ width:{xs:"65%",sm:"37", md:"33%", lg:"27%" }, 
-							height: {xs:"auto", md:"27%" }, 
-							borderRadius: 0,
-							boxSizing:"border-box",
-					}} */}
+				
 				<img src="./images/frame.png" alt="logo Poacea" className='logoImg'/>
 			</div>
 			<UpperBanner />
