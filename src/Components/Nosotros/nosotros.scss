@@ -1,5 +1,12 @@
 #nosotros {
+    padding-left: 10%;
+    padding-right: 10%;
+	
+        
+            
     .circleContainer {
+        width: 30vw;
+        height: 30vw;
         .boxImage  {
             @media (max-width:900px) {
                 text-align: center !important;

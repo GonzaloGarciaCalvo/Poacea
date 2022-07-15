@@ -9,7 +9,7 @@ const AccordionServicios = (props) => {
     const {nombre, descripcion} = props
     return (
         <>
-            <Accordion>
+            <Accordion disableGutters square>
                 
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}

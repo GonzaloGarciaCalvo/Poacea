@@ -19,11 +19,15 @@ const LandingSection = () => {
 
 
 	const { isNearScreen, fromRef } = useNearScreen({
-		distance: '400px'
+		distance: '850px'
 	})
+	console.log("isNeear,", isNearScreen)
 	const SeccionGaleria = lazy(
 		() => import('./Galeria/Galeria')
 	)
+/* 	const SeccionServicios = lazy(
+		() => import('./Servicios/Servicios')
+	) */
 
 	// COMANTADO: funciona para ocultar o mostrar imagen con click
 	/* let circulo1 = document.getElementById("mixColoredCircle")
@@ -46,45 +50,43 @@ const LandingSection = () => {
 	  console.log("display", display)
 	}
 	console.log("display fuera de setVisivility", display) */
+	
 
 
 
 	return (
-		<>
-			
-
-				<div
-					className="logoSection"
-					style={{ marginBottom: "1em", marginTop: "3em" }}
-				>
-					<Avatar
-						alt="logo Poacea"
-						src="images/ESTUDIO1.png"
-						sx={{ width: "27%", height: "27%", borderRadius: 0 }}
-					// LOGO CON MALA CALIDAD, fake svg
-					/>
+    <main>
+			<div className="logoSection">
+				<Avatar
+					alt="logo Poacea"
+					src="images/frame.png"
+					sx={{ width:{xs:"65%",sm:"37", md:"33%", lg:"27%" }, 
+							height: {xs:"auto", md:"27%" }, 
+							borderRadius: 0,
+							boxSizing:"border-box",
+					}}
+				/>
+			</div>
+			<UpperBanner />
+			<Nosotros />
+			<Suspense>
+			<div id="galeria" ref={fromRef} className="divConRef galery" style={{ margin: "0em" }} >
+				
+				<div>
+					{isNearScreen ? <SeccionGaleria /> : <CircularIndeterminate />}
 				</div>
-				<UpperBanner />
-				<Nosotros />
-				<Suspense >
-				<div id="galeria" ref={fromRef} className="divConRef galery" style={{ margin: "0em" }} >
-					<h1 className="tituloSeccion tituloGaleria">GALERIA</h1>
-					<div>
-						{isNearScreen ? <SeccionGaleria /> : <CircularIndeterminate />}
-					</div>
+			</div>
+			</Suspense>
+			<Super8 />
+			{/* <Suspense>
+			<div ref={fromRef} id="servicios">
+					{isNearScreen ? <SeccionServicios /> : <CircularIndeterminate />}
 				</div>
-				</Suspense>
-				<Super8/>
-				<Servicios />
+			</Suspense> */}
+			<Servicios />
 
-
-				{/* <div className='boxAdorno'>
-							<img src="../../images/adornosGaleria/ellipse26.png" className="medioAdornoGaleria1"/>
-							<img src="../../images/adornosGaleria/ellipse25.png"  className="medioAdornoGaleria2"/>
-			</div> */}
-				<Contacto />
-			
-		</>
+			<Contacto />
+		</main>
 	);
 }
 

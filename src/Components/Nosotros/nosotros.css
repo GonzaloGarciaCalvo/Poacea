@@ -1,0 +1,274 @@
+/***** NOSOTROS *****/
+
+.tituloNosotros {
+  text-align: end;
+  padding-right: 0.2em;
+  margin-top: 1em;
+}
+
+.subtituloSeccionNosotros {
+   font-size: 2.6em;
+   font-family: Inika;
+   font-weight: 400;
+  padding-left:14%;
+  margin-bottom: 0.5em;
+  color: var(--redBrand);
+}
+.circleContainer {
+  width: 35vw;
+  height: 25vw;
+  padding-right: 0em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  padding-left: 6em ;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end
+}
+.boxImage {
+  width: 90%;
+  height: 90%;
+  margin:0em;
+  position:relative;
+  padding-left: 1em;
+}
+.circleImg { 
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute; right: 0%;
+  z-index: 0;
+  border-radius: 0;
+}
+
+
+.uniformCircle {
+  width: 59%;
+  position: absolute; top: 11%; right: 13.5%;
+  z-index: -2;
+
+}
+.mixColoredCircle{   
+  border-radius: 50%;
+  position: absolute; top: 11%; right: 13.5%;
+  z-index: 2;
+  width: 59%;
+}
+.mixColoredCircleInvisible {
+  display:none
+}
+.smallCircle {
+  width: 20%;
+  position: absolute; top: -5.5%; left: 79%;
+  
+}
+.mixColoredCircle:hover {
+  opacity: 0;
+}
+.boxImage:hover > .mixColoredCircle{
+  opacity: 0;
+} 
+
+/* FRANCISCO*/
+
+.uniformCircle__francisco {
+  width: 54%;
+  position: absolute;  bottom: 27.5%; left: 50%;
+  z-index: -2;
+}
+.mixColoredCircle__francisco{
+  width: 54%;
+  border-radius: 50%;
+     position: absolute; bottom: 27.5%; left: 50%;
+  z-index: 2;
+}
+.mixColoredCircleInvisible__francisco {
+  display:none
+}
+.smallCircle_francisco {
+  width: 20%;
+  position: absolute; top: 64%; left: 34%;
+}
+.mixColoredCircle__francisco:hover {
+  opacity: 0;
+}
+.boxImage__francisco:hover > .mixColoredCircle__francisco{
+  opacity: 0;
+} 
+
+.uniformCircle__cristina {
+  width: 54%;
+  /*  position: absolute; bottom: 32%; right: 8%; */
+   position: absolute; bottom: 23.5%; right: 15%;
+  z-index: -2;
+}
+.mixColoredCircle__cristina{
+  width: 54%;
+  border-radius: 50%;
+     /* position: absolute; bottom: 32%; right: 8%; */
+     position: absolute; bottom: 23.5%; right: 15%;
+  z-index: 2;
+}
+.mixColoredCircleInvisible__francisco {
+  display:none
+}
+.smallCircle_cristina {
+  /* width: 23.4%; */
+  width: 20%;
+  /* position: absolute; top: 68%; right: 26%; */
+  position: absolute; top: 70%; right: 5%;
+}
+.mixColoredCircle__cristina:hover {
+  opacity: 0;
+}
+.boxImage__francisco:hover > .mixColoredCircle__francisco{
+  opacity: 0;
+} 
+.boxDescripcion {
+  padding-top: 6em;
+}
+.descripcionSocio {
+  /* sx={{paddingRight:{xs:"15%",lg:"19%"}}} */
+  /* padding-right: 19%; */
+}
+.descripcionSocio  {
+  /* padding-left: 6em; */
+  padding-left: 14%;
+  padding-right: 27%;
+  margin-bottom: 1.1em;
+}
+.revelar {
+  width: 7em;
+  padding-left: 14%;
+}
+
+@media (max-width:1200px){
+  .descripcionSocio {
+    padding-right: 15%;
+  }
+  .subtituloSeccionNosotros {
+    font-size: 2.4em;
+ }
+}
+@media (max-width:1000px){
+  .descripcionSocio, .subtituloSeccionNosotros {
+    padding-left: 6%;
+    padding-right: 15%;
+  }
+  .subtituloSeccionNosotros {
+    font-size: 2.2em;
+    padding-left: 6%;
+    padding-right: 15%;
+ }
+ .revelar {
+  padding-left: 6%;
+}
+  /* .subtituloSeccionNosotros {
+    padding-left: 12%;
+    padding-right: 15%;
+  } */
+}
+@media (max-width:800px){
+  .tituloNosotros {
+    padding-right: 0;
+  }
+  .subtituloSeccionNosotros {
+    font-size: 1.8em;
+    padding-left: 6%;
+    padding-right: 10%;
+ }
+  .descripcionSocio, .subtituloSeccionNosotros {
+    padding-left: 6%;
+    padding-right: 16.5%;
+  }
+  .subtituloSeccionNosotros {
+    font-size: 2em;
+    padding-left: 6%;
+    padding-right: 15%;
+ }
+ .circleContainer {
+  width: 43vw;
+  height: 30vw;
+  padding-right: 0em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  padding-left: 0em ;
+}
+.boxImage {
+  /* padding-left: 0;
+  padding-right: 3em; */
+}
+.boxDescripcion {
+  padding-top: 0em;
+}
+}
+@media (max-width:600px){
+  .tituloNosotros {
+    text-align:start;
+    margin-top: 1em;
+    padding-left: 0.7em;
+  }
+  .subtituloSeccionNosotros {
+    font-size: 2em;
+    padding-left: 6%;
+    padding-right: 10%;
+    margin-top: 2em;
+ }
+  .circleContainer {
+    width: 55vw;
+    height: 40vw;
+    padding-right: 0em;
+    padding-left: 0;
+    padding-top: 0em;
+    padding-bottom: 5em;
+  }
+  .boxImage {
+    padding-left: 0;
+  }
+  .circleImg { 
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute; right: 10%;
+  z-index: 0;
+  border-radius: 0;
+}
+  .uniformCircle {
+    width: 79%;
+    position: absolute; top: 13%; right: 22%;
+    z-index: -2;
+  }
+  .mixColoredCircle, .mixColoredCircle__cristina, .mixColoredCircle__francisco{   
+   /*  border-radius: 50%;
+    position: absolute; top: 11%; right: 13.5%;
+    z-index: 2;
+    width: 79%; */
+    display: none;
+  }
+  .mixColoredCircleInvisible {
+    display:none
+  }
+  .smallCircle {
+    width: 20%;
+    position: absolute; top: 0%; left: 70%;
+  }
+  .uniformCircle__francisco {
+    width: 68%;
+    position: absolute;  bottom: 13%; left: 26%;
+    z-index: -2;
+  }
+  .smallCircle_francisco {
+    width: 20%;
+    position: absolute; top: 85%; left: 8%;
+  }
+  .boxDescripcion {
+    padding-top: 1em;
+  }
+  .descripcionSocio, .subtituloSeccionNosotros {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .revelar {
+    padding-left: 15%;
+  }
+}

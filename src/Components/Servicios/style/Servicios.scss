@@ -5,6 +5,39 @@
 .MuiAccordionSummary-expandIconWrapper{
     color:#F90606 !important
 }
+.css-1xe9kig-MuiPaper-root-MuiAccordion-root {
+    border: 1px solid black;
+    //borde general
+}
+
+/* .MuiPaper-root.MuiPapper-elevation.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+} */
+.boxAccordion :nth-child(2), .boxAccordion :nth-child(4)  {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    //quita borde diplicado en elementos 2 y 4
+}
+
+
+
+#servicios.css-1oqqzyl-MuiContainer-root {
+    padding-left: 7.5% ;
+    padding-right: 7.5% ;
+    
+    @media (max-width:1200px){
+        padding-left: 7.5% !important;
+        padding-right: 7.5% !important;
+    }
+    @media (max-width:900px){
+        padding-left: 11% !important;
+        padding-right: 11% !important;
+    }
+}
+  
+  
 .iconoCamara {
     font-size: 1rem !important;
     color:#F90606 !important;
@@ -14,6 +47,7 @@
 #servicios {
     h1 {
         text-align: end;
+        padding-right: 0.5em;
     }
     .descripcion{
         white-space: break-spaces;

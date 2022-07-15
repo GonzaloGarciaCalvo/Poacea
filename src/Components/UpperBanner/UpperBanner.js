@@ -1,5 +1,5 @@
 
-import { Container } from '@mui/system';
+/* import { Container } from '@mui/system'; */
 import "./UperBanner.scss"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
@@ -8,21 +8,21 @@ function UpperBanner() {
   return (
 	<div className="boxInfo">
 				<div>
-					<a href='https://www.instagram.com/ppoaceaa/' target="_blank">
+					<a href='https://www.instagram.com/ppoaceaa/' target="_blank" rel="noreferrer">
 						<InstagramIcon />
 						<p>Stalkéanos <br/>
 						@ppoaceaa</p>
 					</a>
 				</div>
 				<div>
-					<a href='mailto:info@poacea.cl'>
+					<a href='mailto:info@poacea.cl' rel="noreferrer">
 					<EmailIcon />
 					<p>Cotizá <br/>
 					info@poacea.cl</p>
 					</a>
 				</div>
 				<div>
-					<a href="https://wa.me/+56997773406" target="_blank">
+					<a href="https://wa.me/+56997773406" target="_blank" rel="noreferrer">
 						<WhatsAppIcon />
 						<p>Contáctanos <br/>+56 997 773 406</p>
 					</a>

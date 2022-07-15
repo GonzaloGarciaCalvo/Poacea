@@ -20,7 +20,7 @@ const Contacto = () => {
     return (
         <>
             <Container id="contacto" >
-            <h1 className="tituloSeccion">CONTACTO</h1>
+                <h1 className="tituloSeccion">CONTACTO</h1>
                 <h3>Explícanos tu proyecto acá y te contestaremos <br/>en breve con una cotización a tu email</h3>
                 <Grid>
                     <form name="contact" method="post" className="form" >

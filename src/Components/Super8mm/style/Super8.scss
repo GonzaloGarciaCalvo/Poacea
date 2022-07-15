@@ -1,6 +1,31 @@
+.super8Background {
+    background: linear-gradient(180deg,#F7F7F7 0%, rgba(247,247,247,0) 100%);
+}
 #super8{
+    div {
+        margin: 1em;
+    }
+    &.css-1oqqzyl-MuiContainer-root {
+        padding-left: 8%;
+        padding-right: 8%;
+        @media (max-width:1200px){
+            padding-left: 7.5% !important;
+            padding-right: 7.5% !important;
+        }
+        @media (max-width:900px){
+            padding-left: 11% !important;
+            padding-right: 11% !important;
+        }
+    }
     p{
         font-size: 1.2rem;
         text-align: justify;
     }
+    h1{
+        padding-left: 0;
+    }
+}
+.super8Buttton {
+    margin-top: 2.5em;
+    margin-left: 36px;
 }

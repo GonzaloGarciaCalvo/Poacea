@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 /* import Typography from '@mui/material/Typography'; */
-import Menu from '@mui/material/Menu';
+/* import Menu from '@mui/material/Menu'; */
 
 import Container from '@mui/material/Container';
 /* import MenuItem from '@mui/material/MenuItem';
@@ -46,95 +46,123 @@ const theme = createTheme({
     }
   },
 });
-/* const pages = ['Nosotros', 'Galeria', 'Super 8mm', 'Servicios', 'Contacto']; */
 
 function NavBar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  /* const [anchorEl, setAnchorEl] = React.useState(null); */
+  /* const open = Boolean(anchorEl); */
+  /* const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
       setAnchorEl(null);
-  };
+  }; */
 
   const [openMenu, setOpenMenu]= useState(false)
 
 
   return (
+		<ThemeProvider theme={theme}>
+			<AppBar position="sticky" color="default" className="appBar">
+				<Container maxWidth="xl">
+					<Toolbar disableGutters className="ToolBar">
+						<Box
+							className="btnBox"
+							sx={{ display: { xs: "none", sm: "none", md: "inline-flex" } }}
+						>
+							<Link
+								to="nosotros"
+								activeClass="active"
+								spy={true}
+								smooth={true}
+								offset={-70}
+								className="appBarLink"
+							>
+								Nosotros
+							</Link>
+							<Link
+								to="galeria"
+								spy={true}
+								smooth={true}
+								className="appBarLink"
+							>
+								Galeria
+							</Link>
+							<Link to="super8" spy={true} smooth={true} className="appBarLink">
+								Super 8mm
+							</Link>
+							<Link
+								to="servicios"
+								spy={true}
+								smooth={true}
+								duration={1150}
+								className="appBarLink"
+							>
+								Servicios
+							</Link>
+							<Link
+								to="contacto"
+								spy={true}
+								smooth={true}
+								duration={1150}
+								className="appBarLink"
+							>
+								Contacto
+							</Link>
+						</Box>
 
-      
-           <ThemeProvider theme={theme}>
-              <AppBar position="sticky" color="default" className="appBar" >
-                  <Container maxWidth="md" >
-                      <Toolbar disableGutters className="ToolBar">
-
-                          
-                          <Box className="btnBox" sx={{ display: { xs: "none", sm: 'none', md: "inline-flex" } }}>
-                              
-                          <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLink">
-                Nosotros
-              </Link>
-              <Link to="galeria" spy={true} smooth={true} className="appBarLink">
-                Galeria
-              </Link>
-              <Link to="super8" spy={true} smooth={true} className="appBarLink">
-                Super 8mm
-              </Link>
-              <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLink" >
-                Servicios
-              </Link>
-              <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLink">
-                Contacto
-              </Link>
-
-                              
-                              
-                          </Box>
-                          
-                          <IconButton sx={{ display: { xs: "inline-flex", sm: 'inline-flex', md: "none" } }} className="btnMenuResponsive">
-
-                              <MenuIcon onClick={()=> setOpenMenu(true)}/>
-                          </IconButton>
-                          
-
-                      </Toolbar>
-                  </Container>
-                  <SwipeableDrawer anchor="right" open={openMenu} onOpen={()=> setOpenMenu(true)} onClose={()=> setOpenMenu(false)} >
-                      <div>
-                      <IconButton>
-                          <ChevronRightIcon onClick={()=> setOpenMenu(false)}/>
-                      </IconButton>
-                      </div>
-                      <Divider />
-                      <List>
-                          <ListItem>
-                            <Link className="linkResponsive" to="nosotros">
-                               NOSOTROS
-                            </Link>
-                             </ListItem>
-                      <ListItem>
-                        <Link className="linkResponsive" to="galeria">GALERIA</Link>
-                      </ListItem>
-                      <ListItem>
-                      <Link className="linkResponsive" to="super8"> SUPER 8MM </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link className="linkResponsive" to="servicios">SERVICIOS</Link>
-                      </ListItem>
-                      <ListItem>
-                        
-                      <Link className="linkResponsive" to="contacto" >CONTACTO</Link>
-                      </ListItem>
-                      </List>
-                  </SwipeableDrawer>
-              </AppBar>
-
-          </ThemeProvider>
-      
-
-
-  )
+						{<IconButton
+							sx={{
+								display: { xs: "inline-flex", sm: "inline-flex", md: "none" },}}
+								className="btnMenuResponsive"
+								
+						>
+							<MenuIcon onClick={() => setOpenMenu(true)} color="redBrand"/>
+						</IconButton>}
+					</Toolbar>
+				</Container>
+				<SwipeableDrawer
+					anchor="right"
+					open={openMenu}
+					onOpen={() => setOpenMenu(true)}
+					onClose={() => setOpenMenu(false)}
+				>
+					<div>
+						<IconButton>
+							<ChevronRightIcon onClick={() => setOpenMenu(false)} />
+						</IconButton>
+					</div>
+					<Divider />
+					<List>
+						<ListItem>
+							<Link className="linkResponsive" to="nosotros">
+								NOSOTROS
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link className="linkResponsive" to="galeria">
+								GALERIA
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link className="linkResponsive" to="super8">
+                {" "}SUPER 8MM{" "}
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link className="linkResponsive" to="servicios">
+								SERVICIOS
+							</Link>
+						</ListItem>
+						<ListItem>
+							<Link className="linkResponsive" to="contacto">
+								CONTACTO
+							</Link>
+						</ListItem>
+					</List>
+				</SwipeableDrawer>
+			</AppBar>
+		</ThemeProvider>
+	);
 }
 export default NavBar; 
 
