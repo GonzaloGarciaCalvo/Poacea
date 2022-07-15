@@ -1,4 +1,3 @@
-
 import Avatar from '@mui/material/Avatar';
 /* import Box from '@mui/material/Box'; */
 import React, { Suspense, lazy } from 'react';
@@ -11,6 +10,7 @@ import UpperBanner from './UpperBanner/UpperBanner';
 import Servicios from "./Servicios/Servicios";
 import Contacto from "./Contacto/Contacto";
 import Super8 from './Super8mm/Super8';
+
 
 
 
@@ -58,7 +58,11 @@ const LandingSection = () => {
 	return (
     <main>
 			<div className="logoSection">			
-				<img src="../images/frame.png" alt="logo Poacea" className='logoImg'/>
+				<img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
+				<img src="images/frame.png" alt="logo Poacea " className='logoImg'/>
+				<img src="./images/frame.png" alt="logo Poacea ./" className='logoImg'/>
+				<img src="../../images/frame.png" alt="logo Poacea" className='logoImg'/>
+				<img src="./images/frame.png" alt="logo Poacea" className='logoImg'/>
 			</div>
 			<UpperBanner />
 			<Nosotros />
