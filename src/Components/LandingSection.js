@@ -58,7 +58,7 @@ const LandingSection = () => {
 	return (
     <main>
 			<div className="logoSection">			
-				<img src="../../images/frame.png" alt="logo Poacea" className='logoImg'/>
+				<img src="../images/frame.png" alt="logo Poacea" className='logoImg'/>
 			</div>
 			<UpperBanner />
 			<Nosotros />
