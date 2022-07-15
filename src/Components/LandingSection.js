@@ -59,12 +59,13 @@ const LandingSection = () => {
     <main>
 			<div className="logoSection">			
 				<img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
-				<img src="images/frame.png" alt="logo Poacea " className='logoImg'/>
-				<img src="./images/frame.png" alt="logo Poacea ./" className='logoImg'/>
-				<img src="../../images/frame.png" alt="logo Poacea" className='logoImg'/>
-				<img src="./images/frame.png" alt="logo Poacea" className='logoImg'/>
-				<img src="./frame.png" alt="logo Poacea" className='logoImg'/>
-				<img src="frame.png" alt="logo Poacea" className='logoImg'/>
+				<img src="images/frame.png" alt="logo Poacea images/frame.png" className='logoImg'/>
+				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
+				<img src="../../images/frame.png" alt="logo Poacea ../../images/frame.png" className='logoImg'/>
+				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
+				<img src="./frame.png" alt="logo Poacea ./frame.png" className='logoImg'/>
+				<img src="frame.png" alt="logo Poacea frame.png" className='logoImg'/>
+				<img src="/images/frame.png" alt="logo Poacea /images/frame.png" className='logoImg'/>
 			</div>
 			<UpperBanner />
 			<Nosotros />
