@@ -364,7 +364,8 @@ figure {
   }
   .fotoGaleriaAmpliada {
     width: 80%;
-    padding-top: 10%;
+    width: 76%;
+    padding-top: 12%;
   }
   .proyecto {
     display: flex;
@@ -417,15 +418,15 @@ figure {
     transform: rotate(170deg);
   }
   .modalRigthBox {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5%;
     padding-top: 5%;
   }
   .modalCloseIcon {
     position: absolute; left:92%; top:3%
   }
   .boxTextoModal {
-    font-size: 1em;
+    font-size: 0.85em;
   }
 }
