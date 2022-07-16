@@ -268,6 +268,19 @@ figure {
   margin-bottom: 0;
   margin-top: 0;
 }
+.modalRigthBox {
+  display: flex;
+  flex-direction: row;
+}
+.boxModalCloseIcon {
+  /* transform: translateY(-4em); */
+  width: 5%;
+}
+.MuiIcon-root.modalCloseIcon {
+  color: rgb(99, 99, 99);
+  /* transform: translate(60%); */
+  /* width: 4em; */
+}
 .contactButton__galery {
   margin-top: 2em;
 }
@@ -349,6 +362,11 @@ figure {
     margin-bottom: 0;
     height: auto;
   }
+  .fotoGaleriaAmpliada {
+    width: 80%;
+    padding-top: 10%;
+    opacity: 0.3;
+  }
   .proyecto {
     display: flex;
     flex-direction: row;
@@ -398,5 +416,15 @@ figure {
     width: 20%; 
     position:absolute; bottom:4.5%; left: 74%;
     transform: rotate(170deg);
+  }
+  .modalRigthBox {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .modalCloseIcon {
+    position: absolute; left:92%; top:3%
+    
   }
 }
