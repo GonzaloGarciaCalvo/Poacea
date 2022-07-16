@@ -217,14 +217,18 @@
   .circleContainer {
     width: 55vw;
     height: 40vw;
-    padding-right: 0em;
-    padding-left: 0;
+    padding-right: 1em;
+    padding-left: 1em;
     padding-top: 0em;
     padding-bottom: 5em;
     justify-content: center;
   }
   .boxImage {
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(3%);
   }
   .circleImg { 
   width: 85%;
