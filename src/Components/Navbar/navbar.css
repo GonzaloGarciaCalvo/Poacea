@@ -40,6 +40,12 @@
   /* HEIGHT de AppBar */
   min-height: 2.5em !important;
   height: 2.5em;
+  /*funciona en vercel*/
+}
+.MuiToolbar-root.css-12o98wt, .MuiToolbar-root.css-r6ewbb-MuiToolbar-root {
+  height: 2.5em;
+  min-height: 2.5em;
+  /*funciona en local*/
 }
 
 .ToolBar{
