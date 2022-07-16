@@ -365,7 +365,6 @@ figure {
   .fotoGaleriaAmpliada {
     width: 80%;
     padding-top: 10%;
-    opacity: 0.3;
   }
   .proyecto {
     display: flex;
@@ -421,10 +420,12 @@ figure {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .modalCloseIcon {
     position: absolute; left:92%; top:3%
-    
+  }
+  .boxTextoModal {
+    font-size: 1em;
   }
 }
