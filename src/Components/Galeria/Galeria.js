@@ -21,11 +21,15 @@ import {obras} from './Obras'
 				)}
 				
 				<Grid item  xs={12} sm={6} >
-					<div className="capPdf ">
+					{/* <div className="capPdf ">
 						<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' target="_blank"className='pdfButton'>
 								Ver PDF
 						</a>
-					</div>
+					</div> */}
+					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' target="_blank"className='pdfButton2'>
+								{/* Ver PDF */}
+								<img src="../../images/dibujos/cap_pdf_2.webp" alt="link a pdf"  className="capPdf2 "/>	
+					</a>
 					{/* <img src="../../images/dibujos/cap_pdf.jpg" alt="link a pdf"  className="capPdf "/> */}
 				</Grid>
 				

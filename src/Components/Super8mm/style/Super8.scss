@@ -4,6 +4,9 @@
 #super8{
     div {
         margin: 1em;
+        ul {
+            padding-left: 15px;
+        }
     }
     &.css-1oqqzyl-MuiContainer-root {
         padding-left: 8%;
@@ -15,6 +18,10 @@
         @media (max-width:900px){
             padding-left: 11% !important;
             padding-right: 11% !important;
+        }
+        @media (max-width:600px){
+            padding-left: 14% !important;
+            padding-right: 14% !important;
         }
     }
     p{
