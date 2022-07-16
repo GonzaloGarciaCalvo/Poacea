@@ -43,7 +43,10 @@ function Nosotros({itemInfo}) {
 				</Grid>
 				<Grid 
 				  item xs={16} sm={7}
-				  sx={{display:'flex', flexDirection:'column', alignItems:{xs:'center' ,md:'flex-end'}}}
+				  sx={{display:'flex', flexDirection:'column',
+					    alignItems:{xs:'center' ,md:'flex-end',
+							justifyContent:{xs:'center'}
+						}}}
 					>
 					<Box className="circleContainer">
 						<Box className="boxImage">
