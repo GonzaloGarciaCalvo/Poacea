@@ -429,4 +429,7 @@ figure {
   .boxTextoModal {
     font-size: 0.85em;
   }
+  .boxTextoModal h3 {
+    font-weight: 400;
+  }
 }
