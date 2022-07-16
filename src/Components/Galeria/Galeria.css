@@ -8,7 +8,6 @@
   font-family: 'Inika', serif;
   color: var(--redBrand);
   padding-top: 3rem;
-  /* padding-right: 9.3%; */
   padding-right: 19%;
   text-align: end;
   margin-bottom: 1.4em;
@@ -18,8 +17,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
- /*  padding-left: 7em;
-  padding-right: 7em; */
   padding-left: 19%;
   padding-right: 19%;
   padding-bottom: 3em;
@@ -29,15 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* max-width: 20%; */
 }
-/* .fotoGaleria {
-  width: 85% !important;
-  margin-bottom: 2em;
-  height: auto;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-} */
 .fotoGaleria {
   width: 100% !important;
 
@@ -64,7 +53,6 @@
 }
 .adornoGaleria1 {
   width: 8.9%;
-  /* position:absolute;top: 43%; left: 15%; */
   position:absolute;top: 19%; left: 15%;
   z-index:-1;
   transform: rotate(100deg);
@@ -78,53 +66,41 @@
 .adornoGaleria3 {
   width: 9%; 
   position:absolute;top: 31.9%; left: 74%;
-  /* position:absolute; bottom: 12%; left: 74%; */
   z-index:-1;
   transform: rotate(200deg);
 }
 .adornoGaleria4 {
   width: 9%; 
   position:absolute;top: 65.2%; left: 15%;
-  /* position:absolute; bottom: 12%; left: 74%; */
   z-index:-1;
   transform: rotate(255deg);
 }
 .adornoGaleria5 {
   width: 9%; 
   position:absolute; bottom:7%; left: 45%;
-  /* position:absolute; bottom: 12%; left: 74%; */
   z-index:-1;
   transform: rotate(0deg);
 }
 .fotoGaleriaAmpliada {
   width: 100%;
 }
-
 .loading{
   margin: 0px auto
 }
-
 figure img{
   box-sizing: border-box;
-  /* width: 100%; */
 }
 .descripcionProyecto {
   position: absolute; top:0; left: 0%; bottom: 0; right: 0%;
-  /* background-color: rgba(0, 0, 0, 0.55); */
   opacity: 0.8;
   box-sizing: border-box; 
   width: 100% !important;
-  /* margin-bottom: 2.5em; */
   height: auto;
- /*  margin-left: 7.5%;
-  margin-right: 7.5%; */
   visibility: hidden;
   z-index: 1;
   font-family: 'Inika';
   background-color: rgba(250,250,250,0.7);
   font-family: 'Inika', serif;
-  /* padding-left: 20%;
-  padding-right: 20%; */
 }
 .descripcionProyecto h3 {
   color: var(--redBrand);
@@ -134,23 +110,19 @@ figure img{
   text-align: left !important;
   padding-left: 20%;
   padding-right: 20%;
-  
 }
 .descripcionProyecto p {
   text-align:left;
   font-size: 1em;
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 0;
-  
+  margin-top: 0; 
 }
 
 .proyecto {
   box-sizing: border-box;
   position: relative;
-  /* margin-top: 2rem;*/
  width: 85% !important;
-  /* margin-bottom: 2.5em; */
   margin-bottom: 15%;
   height: auto;
   margin-left: 7.5%;
@@ -161,7 +133,6 @@ figure img{
   flex-direction: column;
   justify-content: center;
   visibility:visible;
-
 }
 .proyecto:hover .fotoGaleria{
   filter: blur(5px);
