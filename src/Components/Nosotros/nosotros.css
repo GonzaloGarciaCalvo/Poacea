@@ -113,9 +113,7 @@
   display:none
 }
 .smallCircle_cristina {
-  /* width: 23.4%; */
   width: 20%;
-  /* position: absolute; top: 68%; right: 26%; */
   position: absolute; top: 70%; right: 5%;
 }
 .mixColoredCircle__cristina:hover {
@@ -126,10 +124,6 @@
 } 
 .boxDescripcion {
   padding-top: 6em;
-}
-.descripcionSocio {
-  /* sx={{paddingRight:{xs:"15%",lg:"19%"}}} */
-  /* padding-right: 19%; */
 }
 .descripcionSocio  {
   /* padding-left: 6em; */
@@ -176,7 +170,7 @@
     font-size: 1.8em;
     padding-left: 6%;
     padding-right: 10%;
- }
+  }
   .descripcionSocio, .subtituloSeccionNosotros {
     padding-left: 6%;
     padding-right: 16.5%;
@@ -185,18 +179,14 @@
     font-size: 2em;
     padding-left: 6%;
     padding-right: 15%;
- }
- .circleContainer {
-  width: 43vw;
-  height: 30vw;
-  padding-right: 0em;
-  padding-top: 3em;
-  padding-bottom: 1em;
-  padding-left: 0em ;
-}
-.boxImage {
-  /* padding-left: 0;
-  padding-right: 3em; */
+  }
+  .circleContainer {
+    width: 43vw;
+    height: 30vw;
+    padding-right: 0em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 0em ;
 }
 .boxDescripcion {
   padding-top: 0em;
@@ -213,7 +203,7 @@
     padding-left: 6%;
     padding-right: 10%;
     margin-top: 2em;
- }
+  }
   .circleContainer {
     width: 55vw;
     height: 40vw;
@@ -244,10 +234,6 @@
     z-index: -2;
   }
   .mixColoredCircle, .mixColoredCircle__cristina, .mixColoredCircle__francisco{   
-   /*  border-radius: 50%;
-    position: absolute; top: 11%; right: 13.5%;
-    z-index: 2;
-    width: 79%; */
     display: none;
   }
   .mixColoredCircleInvisible {
