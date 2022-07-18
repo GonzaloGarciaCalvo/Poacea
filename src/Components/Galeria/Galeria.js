@@ -25,7 +25,10 @@ import {obras} from './Obras'
 								Ver PDF
 						</a>
 					</div> */}
-					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' target="_blank" rel="noreferrer" pdfButton2>
+					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' 
+						target="_blank" rel="noreferrer" pdfButton2
+						title='Descargar pdf'
+						>
 							{/* <p> Ver PDF</p> */}
 							<img src="../../images/dibujos/cap_pdf_2.webp" alt="link a pdf"  className="capPdf2 "/>	
 					</a>

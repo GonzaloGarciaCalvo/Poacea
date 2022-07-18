@@ -26,9 +26,10 @@
 
 
 
-#servicios.css-1oqqzyl-MuiContainer-root {
-    padding-left: 7.5% ;
-    padding-right: 7.5% ;
+/* #servicios.css-1oqqzyl-MuiContainer-root */ 
+#servicios {
+    padding-left: 17.6% ;
+    padding-right: 17.6% ;
     
     @media (max-width:1200px){
         padding-left: 7.5% !important;
@@ -50,7 +51,7 @@
 #servicios {
     h1 {
         text-align: end;
-        padding-right: 0.5em;
+        padding-right: 0em;
     }
     .descripcion{
         white-space: break-spaces;

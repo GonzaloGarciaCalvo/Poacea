@@ -2,15 +2,19 @@
     background: linear-gradient(180deg,#F7F7F7 0%, rgba(247,247,247,0) 100%);
 }
 #super8{
+    padding-left: 17.6%;
+    padding-right: 17.6%;
     div {
         margin: 1em;
         ul {
             padding-left: 15px;
+            padding-right: 60px;
         }
     }
-    &.css-1oqqzyl-MuiContainer-root {
-        padding-left: 8%;
-        padding-right: 8%;
+    /* &.css-1oqqzyl-MuiContainer-root { */
+    div {
+        padding-left: 3%;
+        padding-right: 4%;
         @media (max-width:1200px){
             padding-left: 7.5% !important;
             padding-right: 7.5% !important;

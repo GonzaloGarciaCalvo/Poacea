@@ -62,7 +62,7 @@ function NavBar() {
 
   return (
 		<ThemeProvider theme={theme}>
-			<AppBar position="sticky" color="default" className="appBar">
+			<AppBar position="sticky" color="default" className="appBar" id='appBar'>
 				<Container maxWidth="xl">
 					<Toolbar disableGutters className="ToolBar">
 						<Box

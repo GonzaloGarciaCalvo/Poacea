@@ -16,7 +16,7 @@ const  Servicios= () => {
     
     return (
         
-        <Container id="servicios">
+        <div id="servicios">
             <h1 className="tituloSeccion">PRODUCTOS <br/> Y SERVICIOS</h1>
             <div className="boxAccordion">
                 {   
@@ -47,7 +47,7 @@ const  Servicios= () => {
                 <img className="fotoServicios" src="../../images/servicios/retratointrospectivo.jpg" alt="digitalizado"/>
             </Grid>
 		</Grid> */}
-        </Container>
+        </div>
 
 
 

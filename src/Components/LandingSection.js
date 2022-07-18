@@ -56,7 +56,7 @@ const LandingSection = () => {
 
 
 	return (
-    <main>
+    <main id='top'>
 			<div className="logoSection">	
 			{/* Vercel jode con la ruta	 */}	
 				{/* <img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
