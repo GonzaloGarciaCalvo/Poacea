@@ -108,21 +108,21 @@ figure img{
   font-weight: 700;
   margin-bottom: 0;
   text-align: left !important;
-  padding-left: 20%;
+  padding-left: 17%;
   padding-right: 20%;
 }
 .descripcionProyecto p {
   text-align:left;
-  font-size: 1em;
-  padding-left: 20%;
-  padding-right: 20%;
+  font-size: 0.9em;
+  padding-left: 17%;
+  padding-right: 17%;
   margin-top: 0; 
 }
 
 .proyecto {
   box-sizing: border-box;
   position: relative;
- width: 85% !important;
+  width: 85% !important;
   margin-bottom: 15%;
   height: auto;
   margin-left: 7.5%;
@@ -135,10 +135,13 @@ figure img{
   visibility:visible;
 }
 .proyecto:hover .fotoGaleria{
-  filter: blur(5px);
+  filter: blur(1px);
 }
 figure {
   margin: 0;
+}
+.pdfButton2 {
+
 }
 .capPdf {    
   width: 92.2%;
@@ -150,13 +153,16 @@ figure {
   background-repeat: no-repeat;
   background-image: url("../../../public/images/dibujos/cap_pdf_2.webp");
 }
+
 .capPdf2 {    
   width: 92.2%;
   height: 87%;
   margin-right: 4.3%;
   margin-left: 4.1%;
   box-sizing: border-box;
+
 }
+
 .boxTextoModal {
   font-family: "Inika, serif";
   text-align: left;
@@ -213,6 +219,19 @@ figure {
   }
   
 }
+@media (max-width:1200px) {
+  .containerFotos {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .descripcionProyecto h3 {
+    font-size: 0.95em;
+    padding-left: 7%;
+  }
+  .descripcionProyecto p {
+    padding-left: 7%;
+  }
+}
 @media (max-width:1030px) { 
   .adornoGaleria5 {
     width: 9%; 
@@ -227,9 +246,9 @@ figure {
     padding-left: 12%;
     padding-right: 12%;
   }
-  .fotoGaleria {
+  /* .fotoGaleria {
     width: 94% !important;
-  }
+  } */
   .capPdf {    /* ajusta bien desde xxl hasta 900px */
     width: 90%;
     height: 86%;

@@ -1,7 +1,6 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import BasicModal from '../Modal';
-import IconButton from '@mui/material/IconButton'
 import {Link} from 'react-scroll'
 import './Galeria.css'
 import {obras} from './Obras'
@@ -26,9 +25,9 @@ import {obras} from './Obras'
 								Ver PDF
 						</a>
 					</div> */}
-					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' target="_blank"className='pdfButton2'>
-								{/* Ver PDF */}
-								<img src="../../images/dibujos/cap_pdf_2.webp" alt="link a pdf"  className="capPdf2 "/>	
+					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' target="_blank" rel="noreferrer" pdfButton2>
+							{/* <p> Ver PDF</p> */}
+							<img src="../../images/dibujos/cap_pdf_2.webp" alt="link a pdf"  className="capPdf2 "/>	
 					</a>
 					{/* <img src="../../images/dibujos/cap_pdf.jpg" alt="link a pdf"  className="capPdf "/> */}
 				</Grid>
