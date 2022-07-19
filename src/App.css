@@ -3,6 +3,9 @@
 :root {
   --redBrand: #F90606;
 }
+body {
+  overflow-x: hidden !important;
+}
 
 /*** GENERALES ***/
 body { min-height: 100vh; }
