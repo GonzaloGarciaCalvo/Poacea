@@ -4,9 +4,11 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import Grig from '@mui/material/Grid'
+import Grid from '@mui/material/Grid';
 
 const AccordionServicios = (props) => {
-    const {nombre, descripcion} = props
+    const {img, titulo, nombre, descripcion} = props
     return (
         <>
             <Accordion disableGutters square>            
@@ -15,12 +17,25 @@ const AccordionServicios = (props) => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >   
-                    <Typography className="nombreServicio"> <CameraAltIcon className="iconoCamara"/> {nombre} </Typography>
+                    <Typography className="nombreServicio"> 
+                        <CameraAltIcon className="iconoCamara"/> {nombre} 
+                    </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className="descripcion">
-                        {descripcion}
-                    </Typography>
+                    <Grid container direction="row">
+                        <Grid item lg={3}>
+                            <img src={img} alt="imagen servicio"></img>
+                        </Grid>
+                        <Grid item lg={9}>
+                            <Typography className="tituloServicio">
+                                {titulo}
+                            </Typography>
+                            <Typography className="descripcion">
+                                {descripcion}
+                            </Typography>
+                        </Grid>
+
+                    </Grid>
                 </AccordionDetails>
             </Accordion>
         </>
