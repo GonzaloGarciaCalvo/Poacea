@@ -41,7 +41,7 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={16} sm={16} md={2} className="boxArrow">
                         <Link to="top" smooth='true'>
-                            <ArrowCircleUpOutlinedIcon color="white" sx={{color:"white", fontSize:{xl:"6.4em",md:"5em"}}} />
+                            <ArrowCircleUpOutlinedIcon color="white" sx={{color:"white", fontSize:{xl:"6.4em",md:"5em",xs:"3em"}}} />
                         </Link>
                         {/* <svg src="./images/upArrow.svg" alt="icono ir arriba" className="upArrow" ></svg> */}
                         {/* <img src="../../images/upload.png" className="upArrow"></img> */}

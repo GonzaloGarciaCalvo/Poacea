@@ -6,203 +6,210 @@
 }
 .MuiGrid-root.css-11lq3yg-MuiGrid-root.boxFooter {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     /* justify-content: space-between; */
     /* gap: 5rem; */
-    padding-top: 6em;
+    padding-top: 6em !important;
     padding-bottom: 6em;
     /* padding-top: 7%;
     padding-bottom: 7%; */
-    @media (max-width:1200px) {
-        display: flex;
-        flex-direction: row ;
-    }
-    .logoFooter {
-        /* width: 40%; */
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding-top: 0.6em;
-        
-        // width: 350px;
-        /* margin-left: 5rem;
-        margin-top: 2rem; */
 
-        /* img.logoFooterImg {
-            width: 236px;
-            height: 236px;
-            margin-right: 1%;
-            // border: 1px solid white;
-        } */
-    }
 
-    .boxRedes {
-        text-align: start;
-        margin-top: 2rem;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-left: 3.5%;
-        padding-right: 4%;
-        
-        .redes {
-            margin-right: 5rem;
-            margin-right: 3.5%;
-            padding-top: 1rem;
-            .MuiSvgIcon-root {
-                font-size: 1.5rem;
-                margin-right: 6rem;
-                margin-right: 14%;
-                margin-left: 0rem;
-                color: white;
-            }
-        }
-        .copyRight {
-            text-align: start;
-            padding-bottom: 1rem;
+    
+}
+
+.MuiGrid-root.boxRedes {
+    text-align: start;
+    margin-top: 2rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-left: 3.5%;
+    padding-right: 4%;
+    flex-direction: column;
+    align-items: center;
+    
+    .redes {
+        margin-right: 5rem;
+        margin-right: 3.5%;
+        padding-top: 1rem;
+        .MuiSvgIcon-root {
+            font-size: 1.5rem;
+            margin-right: 6rem;
+            margin-right: 14%;
+            margin-left: 0rem;
             color: white;
-            font-size: 400;
-            p {
-                font-size: 1.1em;
-                margin-bottom:0.9em;
-                margin-top:0.9em;
-            }
-            
-        }   
+        }
     }
-    .boxArrow {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-right: 6em;
-        padding-right: 4.5%;
-    }
-    .upArrow {
-        color: white !important;
-        font-size: 4em !important;
-    }
-    @media (max-width:1200px) {
+    .copyRight {
+        text-align: start;
+        padding-bottom: 1rem;
+        color: white;
+        font-size: 400;
+        p {
+            font-size: 1.1em;
+            margin-bottom:0.9em;
+            margin-top:0.9em;
+        }
         
-        .logoFooter{
-            /* text-align: center; */
-            /* padding-left: 5em;
-            padding-top: 2rem; */
-            /* width: 56em; */
-        }
-        /* img.logoFooterImg {
-            width: 200px;
-            height: 200px;
-            margin-right: 0;
-            // border: 1px solid white; 
-        } */
-        .boxRedes{
-            padding-left: 3%;
-            padding-right: 3%;
-            .redes{
-                margin-right: 0px;
-                .MuiSvgIcon-root{
-                    margin-bottom: 0.5rem !important;
-                }
-            }
-        }
-        .boxArrow {
-            width: 100%;
-        }
-    }
-    @media (max-width:900px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .logoFooter{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            /* padding-left: 5em;
-            padding-top: 2rem; */
-            width: 100%;
-            order:2;
-        }
-        /* img.logoFooterImg {
-            width: 130px;
-            height: 130px;
-            margin-right: 0;
-        } */
-        .boxRedes{
-            width: 100%;
-            order: 3;
-            /* padding-left: 2em;
-            padding-right: 2em; */
-            .redes{
-                margin-right: 0px;
-                padding-right: 15%;
-                padding-left: 15%;
-                text-align: center;
-                a {
+    }   
+}
 
-                }
-                .MuiSvgIcon-root{
-                    margin-bottom: 0rem !important;
-                    margin-left: 0.6em;
-                    margin-right: 0.6em;
-                }
-            }
-            .copyRight {
-                text-align: center;
-                padding-bottom: 1rem;
-                color: white;
-                font-size: 400;
-                p {
-                    font-size: 1em;
-                    /* margin-bottom:0.9em;
-                    margin-top:0.9em; */
-                    padding-left: 2em;
-                    padding-right: 2em;
-                }
-                
-            } 
-        }
-        .boxArrow {
-            order:1;
-        }
-    }
-    @media (max-width:600px) {
-        .logoFooter {
-            order:2;
-        }
+.logoFooter {
+    /* width: 40%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.6em;
+    
+    // width: 350px;
+    /* margin-left: 5rem;
+    margin-top: 2rem; */
 
-        .boxRedes {
-            order: 3;
-
-        }
-        .boxArrow {
-            order:1;
-        }
-    }
+    /* img.logoFooterImg {
+        width: 236px;
+        height: 236px;
+        margin-right: 1%;
+        // border: 1px solid white;
+    } */
+}
+.boxArrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6em;
+    padding-right: 4.5%;
+}
+.upArrow {
+    color: white !important;
+    font-size: 4em !important;
 }
 
 .logoFooterImg {
     width: 236px;
     height: 236px;
     margin-right: 1%;
-    @media (max-width:1200px) {
-        .logoFooterImg {
-            width: 200px;
-            height: 200px;
-            margin-right: 0;
-        }
-    }
+
     @media (max-width:900px) {
-        img.logoFooterImg {
-            width: 130px;
-            height: 130px;
-            margin-right: 0;
-        }
+        
     }
 }
 /* .css-i4bv87-MuiSvgIcon-root.css-kw0y8f-MuiSvgIcon-root {
    
     font-size: 5em !important;
 } */
+@media (max-width:1200px) {
+    .MuiGrid-root.css-11lq3yg-MuiGrid-root.boxFooter {
+        display: flex;
+        flex-direction: row ;
+    }
+    .logoFooterImg {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+    }
+    .MuiGrid-root.boxRedes{
+        padding-left: 3%;
+        padding-right: 3%;
+        .redes{
+            margin-right: 0px;
+            .MuiSvgIcon-root{
+                margin-bottom: 0.5rem !important;
+            }
+        }
+    }
+    .boxArrow {
+        width: 100%;
+    }
+}
+@media (max-width:900px) {
+    .MuiGrid-root.css-11lq3yg-MuiGrid-root.boxFooter {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .logoFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* padding-left: 5em;
+        padding-top: 2rem; */
+        width: 100%;
+        order:2;
+    }
+    img.logoFooterImg {
+        width: 170px;
+        height: 170px;
+        margin-right: 0;
+    }
+    /* img.logoFooterImg {
+        width: 130px;
+        height: 130px;
+        margin-right: 0;
+    } */
+    .MuiGrid-root.boxRedes{
+        width: 100%;
+        order: 3;
+        /* padding-left: 2em;
+        padding-right: 2em; */
+        .redes{
+            margin-right: 0px;
+            padding-right: 15%;
+            padding-left: 15%;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .MuiSvgIcon-root {
+                font-size: 1.5rem;
+                padding-left: 1em;
+                padding-right: 1em;
+                color: white;
+            }
+
+            a {
+
+            }
+            .MuiSvgIcon-root.css-1c79k2b-MuiSvgIcon-root{
+                margin-bottom: 0rem !important;
+                margin-left: 0.6em;
+                margin-right: 0.6em;
+                width: 3em;
+                height: 3em;
+            }
+        }
+        .copyRight {
+            text-align: center;
+            padding-bottom: 1rem;
+            color: white;
+            font-size: 400;
+            p {
+                font-size: 1em;
+                /* margin-bottom:0.9em;
+                margin-top:0.9em; */
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+            
+        } 
+    }
+    .boxArrow {
+        order:1;
+        padding-right:0
+    }
+}
+@media (max-width:600px) {
+    .logoFooter {
+        order:2;
+    }
+    .MuiGrid-root.boxRedes {
+        order: 3;
+    }
+    .boxArrow {
+        order:1;
+    }
+}
+

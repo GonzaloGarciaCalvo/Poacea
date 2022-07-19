@@ -4,7 +4,7 @@
         "titulo":"Obras en venta indicadas en GALERÍA",
         "descripcion": "Visita nuestro instagram para ver el desarrollo de nuestro trabajo.",
         "id": 1,
-        "img":"../../images/servicio/dibujo-fotografia-enmarcado.webp"
+        "img":"images/servicio/dibujo-fotografia-enmarcado.webp"
     },
     {
         "nombre": "Retrato Instrospectivo",
