@@ -44,9 +44,7 @@
                         /* display: none; */
                     }
                 }
-                p.pRemovible {
-                    display: none;
-                }
+  
                 
 
             }
@@ -55,6 +53,8 @@
     }
     background-color: #F90606;
 }
-/* @media (max-width:600px) {
-
-} */
+@media (max-width:900px) {
+    p.pRemovible {
+        display: none;
+    }
+}
