@@ -11,12 +11,12 @@ import "./style/Footer.scss"
 const Footer = () => {
     return (
         <footer>
-            <Grid className="footer">
-                <div className="boxFooter">
-                    <div className="logoFooter">
+            <div con className="footer">
+                <Grid container columns={16} className="boxFooter" direction='row' /* sx={{direction:{xs:'column',md:'row'}}} */>
+                    <Grid item xs={16} sm={16} md={6} xl={6} className="logoFooter">
                         <img src="./images/ESTUDIO1footer.png" alt="logo Poacea"/>
-                    </div>
-                    <div className="boxRedes">
+                    </Grid>
+                    <Grid item xs={16} sm={16} md={8}className="boxRedes">
                         <div className="redes">
                             <a href="https://wa.me/+56997773406" target="_blank" rel="noreferrer">
                                 <WhatsAppIcon />
@@ -38,18 +38,17 @@ const Footer = () => {
                             </p>
                             <p> Copyright  ©  2022. POACEA.</p>
                         </div>
-                    </div>
-                    <div className="boxArrow">
+                    </Grid>
+                    <Grid item xs={16} sm={16} md={2} className="boxArrow">
                         <Link to="top" smooth='true'>
-                            {/* <img src="../../images/upload.png" className="upArrow"></img> */}
-                            <ArrowCircleUpOutlinedIcon color="white" sx={{color:"white", fontSize:"8em"}} />
+                            <ArrowCircleUpOutlinedIcon color="white" sx={{color:"white", fontSize:{xl:"6.4em",md:"5em"}}} />
                         </Link>
                         {/* <svg src="./images/upArrow.svg" alt="icono ir arriba" className="upArrow" ></svg> */}
                         {/* <img src="../../images/upload.png" className="upArrow"></img> */}
-                    </div>
+                    </Grid>
 
-                </div>
-            </Grid>
+                </Grid>
+            </div>
         </footer>
     )
 }

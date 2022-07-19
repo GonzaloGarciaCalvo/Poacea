@@ -18,6 +18,9 @@
             width: 1.5em;
             height: 1.5em;
             color:white;
+            @media (max-width:900px) {
+                margin-right: 0.4rem;
+            }
         }
         a{
             display: flex;
@@ -25,13 +28,27 @@
             justify-content: space-around;
             align-items: center;
             text-decoration: none;
-            p{
-                font-size: 1.1em;
-                color:white;
-                font-weight: 700;
-                @media (max-width:600px) {
-                    font-size: 1em;
+            @media (max-width:600px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            div {
+                p{
+                    font-size: 1.1em;
+                    color:white;
+                    font-weight: 700;
+                    padding: 0em;
+                    margin: 0.2em;
+                    @media (max-width:900px) {
+                        font-size: 1em;
+                        /* display: none; */
+                    }
                 }
+                p.pRemovible {
+                    display: none;
+                }
+                
+
             }
         }
         

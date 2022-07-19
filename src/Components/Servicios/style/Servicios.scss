@@ -1,6 +1,7 @@
-.nombreServicio{
-    font-weight: bolder !important;
-    
+.nombreServicio, .descripcion{
+    font-weight: 400;
+    font-family: 'Inika',serif !important;
+    color:#F90606 
 }
 .MuiAccordionSummary-expandIconWrapper{
     color:#F90606 !important
@@ -36,8 +37,8 @@
         padding-right: 7.5% !important;
     }
     @media (max-width:900px){
-        padding-left: 11% !important;
-        padding-right: 11% !important;
+        padding-left: 12% !important;
+        padding-right: 12% !important;
     }
 }
   
@@ -52,6 +53,9 @@
     h1 {
         text-align: end;
         padding-right: 0em;
+        @media (max-width:600px) {
+            transform: translate(0.9em);
+            }
     }
     .descripcion{
         white-space: break-spaces;

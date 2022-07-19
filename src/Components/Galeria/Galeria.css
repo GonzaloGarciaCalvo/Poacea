@@ -8,7 +8,7 @@
   font-family: 'Inika', serif;
   color: var(--redBrand);
   padding-top: 3rem;
-  padding-right: 19%;
+  padding-right: 17.6%;
   text-align: end;
   margin-bottom: 1.4em;
   margin-top: 0.4em;
@@ -245,8 +245,8 @@ figure {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 10.8%;
+    padding-right: 10.8%;
   }
   /* .fotoGaleria {
     width: 94% !important;
@@ -282,6 +282,8 @@ figure {
   .tituloGaleria {
     font-size: 2.1em;
     padding-right: 0.8em;
+    padding-right: 12%;
+    transform: translate(0.9em);
   }
   .fotoGaleria {
     width: 100% !important;

@@ -9,8 +9,7 @@ const AccordionServicios = (props) => {
     const {nombre, descripcion} = props
     return (
         <>
-            <Accordion disableGutters square>
-                
+            <Accordion disableGutters square>            
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
