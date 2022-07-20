@@ -28,24 +28,24 @@ const AccordionServicios = (props) => {
                             <img src={img} alt="imagen servicio" className='imgAcordion'></img>
                         </Grid>
                         <Grid item lg={9} className="boxDescripcionAcordion">
+                                {/* <Typography className="tituloServicio">
+                                    {titulo}
+                                </Typography>
+                                <Typography className="descripcion">
+                                    {descripcion}
+                                </Typography> */}
+                            <div className='boxsuperior'>
                                 <Typography className="tituloServicio">
                                     {titulo}
                                 </Typography>
                                 <Typography className="descripcion">
                                     {descripcion}
                                 </Typography>
-                            {/* <div className='boxsuperior'>
-                                <Typography className="tituloServicio">
-                                    {titulo}
-                                </Typography>
-                                <Typography className="descripcion">
-                                    {descripcion}
-                                </Typography>
-                            </div> */}
-                            <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
-                            {/* <div className='boxButton'>
+                            </div>
+                            {/* <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link> */}
+                            <div className='boxButton'>
                                 <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
-                            </div> */}
+                            </div>
                         </Grid>
 
                     </Grid>
