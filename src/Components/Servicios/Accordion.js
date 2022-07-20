@@ -4,8 +4,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
-import Grig from '@mui/material/Grid'
 import Grid from '@mui/material/Grid';
+import {Link} from 'react-scroll'
 
 const AccordionServicios = (props) => {
     const {img, titulo, nombre, descripcion} = props
@@ -13,6 +13,7 @@ const AccordionServicios = (props) => {
         <>
             <Accordion disableGutters square>            
                 <AccordionSummary
+                    className='summary'
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
@@ -21,18 +22,30 @@ const AccordionServicios = (props) => {
                         <CameraAltIcon className="iconoCamara"/> {nombre} 
                     </Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails className='details'>
                     <Grid container direction="row">
-                        <Grid item lg={3}>
-                            <img src={img} alt="imagen servicio"></img>
+                        <Grid item lg={3}> {/* {dar una ancho fijo a esta parte} */}
+                            <img src={img} alt="imagen servicio" className='imgAcordion'></img>
                         </Grid>
-                        <Grid item lg={9}>
-                            <Typography className="tituloServicio">
-                                {titulo}
-                            </Typography>
-                            <Typography className="descripcion">
-                                {descripcion}
-                            </Typography>
+                        <Grid item lg={9} className="boxDescripcionAcordion">
+                                <Typography className="tituloServicio">
+                                    {titulo}
+                                </Typography>
+                                <Typography className="descripcion">
+                                    {descripcion}
+                                </Typography>
+                            {/* <div className='boxsuperior'>
+                                <Typography className="tituloServicio">
+                                    {titulo}
+                                </Typography>
+                                <Typography className="descripcion">
+                                    {descripcion}
+                                </Typography>
+                            </div> */}
+                            <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
+                            {/* <div className='boxButton'>
+                                <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
+                            </div> */}
                         </Grid>
 
                     </Grid>

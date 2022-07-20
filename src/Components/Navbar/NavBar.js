@@ -4,8 +4,8 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-/* import Typography from '@mui/material/Typography'; */
-/* import Menu from '@mui/material/Menu'; */
+/* /* import Typography from '@mui/material/Typography'; */
+import Menu from '@mui/material/Menu'; 
 
 import Container from '@mui/material/Container';
 /* import MenuItem from '@mui/material/MenuItem';
@@ -182,11 +182,11 @@ export default NavBar;
 //     setAnchorElNav(null);
 //   };
 
-  /* const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  }; */
+//   /* const handleCloseUserMenu = () => {
+//     setAnchorElUser(null);
+//   }; */
 
-  /* function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); } */
+//   /* function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); } */
  
 
 //   return (
@@ -224,21 +224,21 @@ export default NavBar;
 //               }}
 //             >
 //             <div className='MenuMovil'>
-              // <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLinkMovil">
-              //   Nosotros
-              // </Link>
-              // <Link to="galeria" spy={true} smooth={true} className="appBarLinkMovil">
-              //   Galeria
-              // </Link>
-              // <Link to="super8" spy={true} smooth={true} className="appBarLinkMovil">
-              //   Super 8mm
-              // </Link>
-              // <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLinkMovil" >
-              //   Servicios
-              // </Link>
-              // <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLinkMovil">
-              //   Contacto
-              // </Link>
+//               <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLinkMovil">
+//                 Nosotros
+//               </Link>
+//               <Link to="galeria" spy={true} smooth={true} className="appBarLinkMovil">
+//                 Galeria
+//               </Link>
+//               <Link to="super8" spy={true} smooth={true} className="appBarLinkMovil">
+//                 Super 8mm
+//               </Link>
+//               <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLinkMovil" >
+//                 Servicios
+//               </Link>
+//               <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLinkMovil">
+//                 Contacto
+//               </Link>
 //             </div>
 //               {/* {pages.map((page) => (
 //                 <MenuItem key={page} onClick={handleCloseNavMenu}>

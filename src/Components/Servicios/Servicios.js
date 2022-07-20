@@ -29,7 +29,8 @@ const  Servicios= () => {
                             descripcion={producto.descripcion}
                             titulo={producto.titulo}
                             img={producto.img}
-                            className={(producto.id===2 || producto.id===4)? "sinBorde":"" }
+                            className="accordionServicios"
+                            /* className={(producto.id===2 || producto.id===4)? "sinBorde":"" } */
                         />)
                     })
                     

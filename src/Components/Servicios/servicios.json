@@ -4,41 +4,41 @@
         "titulo":"Obras en venta indicadas en GALERÍA",
         "descripcion": "Visita nuestro instagram para ver el desarrollo de nuestro trabajo.",
         "id": 1,
-        "img":"images/servicio/dibujo-fotografia-enmarcado.webp"
+        "img":"/images/servicios/dibujo-fotografia-enmarcado.webp"
     },
     {
         "nombre": "Retrato Instrospectivo",
         "titulo":"Retrato de carácter abstracto surrealista.",
         "descripcion": "Teniendo en conocimiento los nombres de la persona a retratar, se inicia el dibujo con lineas de color intuitivas las que daran dirección para el sombreado con grafito, en el pueden aparecer formas vegetales, paisajes, contornos corporales que denotaran caracteristicas psiquicas del retratado. El dibujo es cerrado con fecha de realización, titulado con el nombre del retratado, firma de la artista y sello del estudio.",
         "id": 2,
-        "img":"./../../images/servicio/retrato-introspectivo.webp"
+        "img":"/images/servicios/retrato-introspectivo.webp"
     },
     {
         "nombre": "Filmacion de ceremonías en super 8mm blanco y negro",
         "titulo":"Filmación de ceremonias en super 8 mm blanco y negro",
         "descripcion": "Realizamos proyectos de entre 3 a 15 minutos de filmación que entregamos revelado y digitalizado (en caso de requerir). En el registro apuntamos a capturar detalles íntimos, trabajando de un modo delicado con la luz y ajustandonos a sus referencias. Te llevas el material original y un pendrive que contiene el digitalizado en formato video mp4 . \n* Entendemos como ceremonia toda acción o acto exterior arreglado, por ley, estatuto o costumbre, para dar culto a las cosas divinas, o reverencia y honor a las profanas. \n * Al ser un film mudo; podemos musicalizar el registro en un estilo sonoro ambiental.",
         "id": 3,
-        "img":"./images/servicio/filmacion.webp"
+        "img":"/images/servicios/filmacion.webp"
     },
     {
         "nombre": "Taller de intervención fílmica",
         "titulo":"Taller de intervención fílmica ",
         "descripcion": "Entregar conocimientos sobre intervención en los diversos formatos fílmicos que se encuentran en venta de forma virgen, vencidas y/o reveladas. Estas pueden ser Reversibles o Negativos. Analizar referencias y descripciones específicas de las distintas ramas que se pueden desarrollar en este medio.",
         "id": 4,
-        "img":"./images/servicio/taller.webp"
+        "img":"/images/servicios/taller.webp"
     },
     {
         "nombre": "Revelado 16MM y 8MM blanco y negro",
         "titulo":"Revelado Películas 16mm y Super 8mm (Reversibles y Negativas).Revelar películas que hayan sido filmadas en cualquiera de los dos formatos. Ya sean reversibles o negativas.",
         "descripcion": "Para este servicio es preciso comprender que 100 pies equivalen a 30 metros; sea de 16y/o S8mm. Cada revelado dependerá de los químicos que requiera cada película en particular.",
         "id": 5,
-        "img":"./images/servicio/filmacion.webp"
+        "img":"/images/servicios/revelado.webp"
     },
     {
         "nombre":"DIGITALIZADO PELÍCULAS SÚPER 8MM (REVERSIBLES Y NEGATIVAS)",
         "titulo":"Escáner específicamente diseñado para film S8mm",
         "descripcion":"El digitalizado del film necesita una limpieza previa, un ambiente libre de polvo y humedad, para que así la digitalización sea lo mas óptima; evitando daños a la emulsión de cada material, ya sea filmado por Poacea Estudio o entregado con otros fines.",
         "id":6,
-        "img":"images/servicio/digitalizado.webp"  
+        "img":"/images/servicios/digitalizado.webp"  
     }
 ]

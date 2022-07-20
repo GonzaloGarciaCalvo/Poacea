@@ -3,30 +3,52 @@
     font-family: 'Inika',serif !important;
     color:#F90606 
 }
- .descripcion{
+ .descripcion,.tituloServicio {
     font-family: 'Inika',serif;
+    
 }
 .MuiAccordionSummary-expandIconWrapper{
     color:#F90606 !important
 }
 .css-1xe9kig-MuiPaper-root-MuiAccordion-root {
-    border: 1px solid black;
+    border: 2px solid black;
     //borde general
 }
-.css-sx5ns6 {
-    border: 1px solid black;
+.boxAccordion  {
+    border: 2px solid black !important;
+    /* border-top: 2px solid black !important;
+    border-top: 2px solid black !important; */
 }
+/* .accordionServicios {
+    border-top: 2px solid black;
+} */
+/* .css-sx5ns6 {
+    border: 1px solid black;
+} */
+/* .details {
+    border-bottom: 0;
+}
+.summary {
+    border-top: 1px solid black;
+} */
 
 /* .MuiPaper-root.MuiPapper-elevation.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-} */
-.boxAccordion :nth-child(2), .boxAccordion :nth-child(4)  {
+} */ //NO VA
+/* .boxAccordion :nth-child(2), .boxAccordion :nth-child(4)  {
     border-top: 0 !important;
     border-bottom: 0 !important;
     //quita borde diplicado en elementos 2 y 4
 }
+.boxAccordion .boxAccordion :nth-child(1) {
+    border-top: 0 !important;
+}
+.MuiPaper-root.boxAccordion .boxAccordion :last-child {
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+} */
 
 
 
@@ -63,6 +85,7 @@
     .descripcion{
         white-space: break-spaces;
         text-align: justify;
+        padding-top: 0.8em;
     }
     .boxFotosServicios{
         display: flex;
@@ -70,11 +93,33 @@
         gap:2;
         justify-content: space-around;
         margin-top: 2rem;
-        .fotoServicios{
+        /* .fotoServicios{
             width: 250px;
             height: 300px;
             margin-top: 1rem;
-        }
+        } */
     }
     
+}
+.imgAcordion {
+    /* width: 237px; */
+    width: 100%;
+}
+.MuiGrid-root.boxDescripcionAcordion {
+    padding-left: 2em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.boxsuperior {
+    height: 82%;
+}
+.serviceButton {
+    margin-top: 0.8em;
+    /* position: absolute; bottom: 16px; */
+}
+.boxDescripcionAcordion {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }

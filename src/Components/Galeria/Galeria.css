@@ -55,25 +55,25 @@
 }
 .adornoGaleria1 {
   width: 8.9%;
-  position:absolute;top: 19%; left: 15%;
+  position:absolute;top: 19%; left: 13%;
   z-index:-1;
   transform: rotate(100deg);
 }
 .adornoGaleria2 {
   width: 8.9%;
-  position:absolute;top: -2.9%; left: 75%;
+  position:absolute;top: -2.9%; left: 76%;
   z-index:-1;
   transform: rotate(21deg);
 }
 .adornoGaleria3 {
   width: 9%; 
-  position:absolute;top: 31.9%; left: 74%;
+  position:absolute;top: 31.9%; left: 76%;
   z-index:-1;
   transform: rotate(200deg);
 }
 .adornoGaleria4 {
   width: 9%; 
-  position:absolute;top: 65.2%; left: 15%;
+  position:absolute;top: 65.2%; left: 13%;
   z-index:-1;
   transform: rotate(255deg);
 }
@@ -185,18 +185,15 @@ figure {
   flex-direction: row;
 }
 .boxModalCloseIcon {
-  /* transform: translateY(-4em); */
   width: 5%;
 }
 .MuiIcon-root.modalCloseIcon {
   color: rgb(99, 99, 99);
-  /* transform: translate(60%); */
-  /* width: 4em; */
 }
 .contactButton__galery {
   margin-top: 2em;
 }
-/* .css-1b3l6lk-MuiGrid-root .capPdf .pdfButton { */
+
   .pdfButton {
   color: white;
   text-decoration: none;
@@ -212,7 +209,6 @@ figure {
   
   .adornoGaleria4 {
     position:absolute;top: 63.2%; left: 15%;
-    /* position:absolute; bottom: 12%; left: 74%; */
   }
   .adornoGaleria5 {
     position:absolute; bottom: 9.5%; 
@@ -246,10 +242,8 @@ figure {
     padding-left: 10.8%;
     padding-right: 10.8%;
   }
-  /* .fotoGaleria {
-    width: 94% !important;
-  } */
-  .capPdf {    /* ajusta bien desde xxl hasta 900px */
+
+  .capPdf {   
     width: 90%;
     height: 86%;
     margin-right: 4%;
@@ -265,7 +259,6 @@ figure {
   }
   .adornoGaleria3 {
     position:absolute;top: 32%; left: 79.5%;
-    /* position:absolute; bottom: 12%; left: 74%; */
   }
   .adornoGaleria4 {
     position:absolute;top: 65.2%; left: 9%;
@@ -273,6 +266,12 @@ figure {
   }
   .adornoGaleria5 {
     position:absolute; bottom:12%; left: 45%;
+  }
+  .proyecto:hover .descripcionProyecto {
+    visibility: hidden;
+  }
+  .proyecto:hover .fotoGaleria{
+    filter: blur(0px);
   }
 }
 
@@ -285,7 +284,6 @@ figure {
   }
   .fotoGaleria {
     width: 100% !important;
-    /* margin-bottom: 2.5em; */
     margin-bottom: 0;
     height: auto;
   }
@@ -327,13 +325,8 @@ figure {
     min-height: 131px;
     margin-right: 2.5%;
     margin-left: 2.5%;
-    /* margin-bottom: 2.5em; */
-    /* padding-bottom: 2.5em; */
-    /* background-size:contain; */
-/*     background-image: url("../../../public/images/dibujos/cap_pdf_2.webp"); */
     display: block;
   }
- 
   .contactButton__galery {
     margin-top: 4em;
   }
@@ -371,4 +364,5 @@ figure {
   .boxTextoModal h3 {
     font-weight: 400;
   }
+
 }

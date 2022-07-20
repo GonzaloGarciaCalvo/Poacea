@@ -40,7 +40,6 @@ body {  }
   }
 }
 .subtituloSeccion {
-
   font-size:3rem ;
   font-family: 'Inika', serif;
   color: var(--redBrand);
@@ -109,6 +108,4 @@ body {  }
 .contactButton:active {
   box-shadow:inset 0 0 4px 4px #F9060640;
 }
-/* .contactButton__galeria--position {
 
-} */
