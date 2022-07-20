@@ -5,9 +5,9 @@
 }
 body {
   overflow-x: hidden !important;
-  min-height: 100vh;
-  width: 100vw;
+  width: 100vw !;
 }
+
 
 /*** GENERALES ***/
 body {  }
@@ -54,6 +54,9 @@ body {  }
 }
 
 @media (max-width:900px) {
+  body {
+    overflow-x: hidden !important;
+  }
   .logoSection {
     min-height: 200px;
   }

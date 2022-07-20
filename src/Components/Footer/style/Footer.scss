@@ -1,8 +1,9 @@
 .footer {
     margin-top: 2rem;
     background-color: #F90606;
-    max-width: 100% !important;
+    width: 100vw !important;
     display: flex;
+
 }
 .MuiGrid-root.css-11lq3yg-MuiGrid-root.boxFooter {
     display: flex;
@@ -125,6 +126,9 @@
     }
 }
 @media (max-width:900px) {
+    .footer {
+        width: 97.4vw;
+    }
     .MuiGrid-root.css-11lq3yg-MuiGrid-root.boxFooter {
         display: flex;
         flex-direction: column !important;

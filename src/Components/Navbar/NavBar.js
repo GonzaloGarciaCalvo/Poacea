@@ -125,6 +125,7 @@ function NavBar() {
 					open={openMenu}
 					onOpen={() => setOpenMenu(true)}
 					onClose={() => setOpenMenu(false)}
+					
 				>
 					<div>
 						<IconButton>
