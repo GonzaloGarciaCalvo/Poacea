@@ -129,11 +129,11 @@ function NavBar() {
 					onClose={() => setOpenMenu(false)}
 				>
 					<div>
-						{/* <IconButton>
+						<IconButton>
 							<ChevronRightIcon onClick={() => setOpenMenu(false)} />
-						</IconButton> */}
+						</IconButton>
 					</div>
-					{/* <Divider /> */}
+					<Divider />
 					<List>
 						<ListItem>
 							<Link className="linkResponsive" to="nosotros">

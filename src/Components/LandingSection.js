@@ -1,19 +1,11 @@
-/* import Avatar from '@mui/material/Avatar'; */
-/* import Box from '@mui/material/Box'; */
 import React, { Suspense, lazy } from 'react';
-/* import Grid from '@mui/material/Grid'; */
 import CircularIndeterminate from './Spinner'
 import useNearScreen from '../Hooks/UseNearScreen'
 import Nosotros from './Nosotros/Nosotros';
 import UpperBanner from './UpperBanner/UpperBanner';
-/* import Galeria from './Galeria/Galeria.js'; */
 import Servicios from "./Servicios/Servicios";
 import Contacto from "./Contacto/Contacto";
 import Super8 from './Super8mm/Super8';
-
-
-
-
 
 
 const LandingSection = () => {
@@ -70,9 +62,6 @@ const LandingSection = () => {
 				</div>
 			</div>
 			</Suspense>
-			{/* <div id="galeria" className="divConRef galery" >
-				<Galeria />
-			</div> */}
 			<Super8 />
 			{/* <Suspense>
 			<div ref={fromRef} id="servicios">
