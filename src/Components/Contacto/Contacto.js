@@ -31,7 +31,7 @@ const Contacto = () => {
                         <input type="email" required placeholder="Ingresa tu correo electronico" name="correo" />
                         {/* <label>Ingresa su mensaje</label> */}
                         <textarea required placeholder="Describe tu proyecto aquí" name="message" />
-                        <Button type="submit" className="btnContacto" id=''variant="contained" >Enviar</Button>
+                        <Button type="submit" className="btnContacto" name="button" id="button" variant="contained" >Enviar</Button>
                     </form>
                 </Grid>
 
