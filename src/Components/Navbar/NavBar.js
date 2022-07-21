@@ -64,7 +64,7 @@ function NavBar() {
 		<ThemeProvider theme={theme}>
 			<AppBar position="sticky" color="default" className="appBar" id='appBar'>
 				<Container maxWidth="xl">
-					<Toolbar disableGutters className="ToolBar">
+					<Toolbar disableGutters id="toolBar">
 						<Box
 							className="btnBox"
 							sx={{ display: { xs: "none", sm: "none", md: "inline-flex" } }}
@@ -110,29 +110,30 @@ function NavBar() {
 							</Link>
 						</Box>
 
-						{<IconButton
+						<IconButton
 							sx={{
 								display: { xs: "inline-flex", sm: "inline-flex", md: "none" },}}
 								className="btnMenuResponsive"
 								
 						>
 							<MenuIcon onClick={() => setOpenMenu(true)} color="redBrand"/>
-						</IconButton>}
+						</IconButton>
 					</Toolbar>
 				</Container>
 				<SwipeableDrawer
+
+				  swipeAreaWidth={0}
 					anchor="right"
 					open={openMenu}
 					onOpen={() => setOpenMenu(true)}
 					onClose={() => setOpenMenu(false)}
-					
 				>
 					<div>
-						<IconButton>
+						{/* <IconButton>
 							<ChevronRightIcon onClick={() => setOpenMenu(false)} />
-						</IconButton>
+						</IconButton> */}
 					</div>
-					<Divider />
+					{/* <Divider /> */}
 					<List>
 						<ListItem>
 							<Link className="linkResponsive" to="nosotros">

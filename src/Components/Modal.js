@@ -47,7 +47,7 @@ export default function BasicModal({obra}) {
   return (
 		<>
 			<figure className="figure proyecto">{}
-        <img src={obra.image}  className="fotoGaleria" alt="dibujo" />
+        <img onClick={handleOpen} src={obra.image}  className="fotoGaleria" alt="dibujo" />
 				<figcaption onClick={handleOpen} className="descripcionProyecto">
           <h3>{obra.titulo}</h3>
           <p>{obra.tecnica}</p>
@@ -89,9 +89,9 @@ export default function BasicModal({obra}) {
             </Grid>
           </Grid>
 					
-          <Grid container className='boxModalCloseIcon'>
+          {/* <Grid container className='boxModalCloseIcon'>
               
-          </Grid>        
+          </Grid>     */}    
           <HighlightOffIcon onClick={handleClose} fontSize="large" className='modalCloseIcon'/>
           
 				</Box>

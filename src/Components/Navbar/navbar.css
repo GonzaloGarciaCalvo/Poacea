@@ -7,12 +7,19 @@
 .css-1hnfq8z-MuiPaper-root-MuiAppBar-root {
   box-shadow:none !important;
   box-shadow: 0px 0px 0px 0px white,0px 0px 0px 0px white,0px 0px 0px 0px white !important;
-  /* color: transparent !important; */
   background-color: white !important;
 }
 .MuiPaper-root.css-izwq1m {
   box-shadow: none !important;
   background-color: white !important;
+}
+.MuiList-root.MuiList-padding.css-h4y409-MuiList-root {
+  /* prueba de swipeable  */
+  width: 100px; /*funciona*/
+}
+.toolBar {
+  overflow: hidden;
+  margin: 0;
 }
 
 .appBarLink {

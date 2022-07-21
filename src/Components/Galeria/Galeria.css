@@ -2,6 +2,7 @@
 
 #galeria {
   min-height: 450px;
+  overflow-x: hidden;
 }
 .tituloGaleria {
   font-size: 4rem;
@@ -267,6 +268,9 @@ figure {
   .adornoGaleria5 {
     position:absolute; bottom:12%; left: 45%;
   }
+  /***************************************************
+  ***** ERROR Si anulo el hover no despliega modal ***
+  ***************************************************/
   .proyecto:hover .descripcionProyecto {
     visibility: hidden;
   }
