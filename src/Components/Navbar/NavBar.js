@@ -114,7 +114,7 @@ function NavBar() {
 							sx={{
 								display: { xs: "inline-flex", sm: "inline-flex", md: "none" },}}
 								className="btnMenuResponsive"
-								
+								left="1rem"
 						>
 							<MenuIcon onClick={() => setOpenMenu(true)} color="redBrand"/>
 						</IconButton>
