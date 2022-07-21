@@ -26,7 +26,7 @@ import {obras} from './Obras'
 						</a>
 					</div> */}
 					<a href='https://drive.google.com/file/d/1AhL1xwbaeESQdyEJzo6JiVnPz6vzvagQ/view?usp=sharing' 
-						target="_blank" rel="noreferrer" pdfButton2
+						target="_blank" rel="noreferrer" /* pdfButton2 */
 						title='Descargar pdf'
 						>
 							{/* <p> Ver PDF</p> */}
@@ -40,9 +40,9 @@ import {obras} from './Obras'
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria3" alt="adorno"/>
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria4" alt="adorno"/>
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria5" alt="adorno"/>
-				<Grid item xs={12} direction="column"alignItems="center">
+				{/* <Grid item xs={12} direction="column"alignItems="center">
 							
-				</Grid>
+				</Grid> */}
 				<Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton contactButton__galery">Contacto</Link>
 
 			</Grid>

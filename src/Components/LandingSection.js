@@ -14,7 +14,7 @@ const LandingSection = () => {
 	const { isNearScreen, fromRef } = useNearScreen({
 		distance: '850px'
 	})
-	console.log("isNeear,", isNearScreen)
+
 	const SeccionGaleria = lazy(
 		() => import('./Galeria/Galeria')
 	)
