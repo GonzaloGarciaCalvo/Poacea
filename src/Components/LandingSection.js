@@ -58,16 +58,8 @@ const LandingSection = () => {
 	return (
     <main id='top'>
 			<div className="logoSection">	
-			{/* Vercel jode con la ruta	 */}	
-				{/* <img src="../images/frame.png" alt="logo Poacea ../" className='logoImg'/>
-				<img src="images/frame.png" alt="logo Poacea images/frame.png" className='logoImg'/>
-				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
-				<img src="../../images/frame.png" alt="logo Poacea ../../images/frame.png" className='logoImg'/>
-				<img src="./images/frame.png" alt="logo Poacea ./images/frame.png" className='logoImg'/>
-				<img src="./frame2.png" alt="logo Poacea ./frame2.png" className='logoImg'/> */}
-				<img src="frame2.png" alt="logo Poacea frame2.png" className='logoImg'/>
-				{/* <img src="/images/frame.png" alt="logo Poacea /images/frame.png" className='logoImg'/>
-				<img src="/images/frame.png" alt="public/images/frame.png" className='logoImg'/> */}
+				{/* <img src="/images/frame2.jpg" alt="logo Poacea ./frame2.png" className='logoImg'/>  */}
+				<img src="images/frame.webp" alt="logo Poacea frame.webp" className='logoImg'/>
 			</div>
 			<UpperBanner />
 			<Nosotros />
