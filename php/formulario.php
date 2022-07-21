@@ -2,7 +2,7 @@
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $empresa = $_POST['mensaje'];
-$localname = $_POST['local'];
+
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";

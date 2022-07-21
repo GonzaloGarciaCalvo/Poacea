@@ -23,7 +23,7 @@ const Contacto = () => {
                 <h1 className="tituloSeccion">CONTACTO</h1>
                 <h3>Explícanos tu proyecto acá y te contestaremos <br/>en breve con una cotización a tu email</h3>
                 <Grid>
-                    <form name="contact"  className="form" method="POST" action="./formulario.php"  >
+                    <form name="contact"  className="form" method="POST" action="/formulario.php"  >
                         <input type="hidden" name="form-name" value="contact" />
                         {/* <label>Nombre completo</label> */}
                         <input type="text" required placeholder="Ingresa tu nombre" name="name" />
@@ -31,7 +31,7 @@ const Contacto = () => {
                         <input type="email" required placeholder="Ingresa tu correo electronico" name="correo" />
                         {/* <label>Ingresa su mensaje</label> */}
                         <textarea required placeholder="Describe tu proyecto aquí" name="message" />
-                        <Button type="submit" className="btnContacto" variant="contained" >Enviar</Button>
+                        <Button type="submit" className="btnContacto" id=''variant="contained" >Enviar</Button>
                     </form>
                 </Grid>
 
