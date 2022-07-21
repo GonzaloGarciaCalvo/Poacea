@@ -12,7 +12,9 @@
 .MuiList-root.MuiList-padding.css-h4y409-MuiList-root {
   width: 100px; 
 }
-.toolBar {
+#toolBar.toolBar {
+  width: 100%;
+  
   overflow: hidden;
   margin: 0;
 }
@@ -42,17 +44,23 @@
   /* HEIGHT de AppBar */
   min-height: 2.5em !important;
   height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
   /*funciona en vercel*/
 }
 .MuiToolbar-root.css-12o98wt, .MuiToolbar-root.css-r6ewbb-MuiToolbar-root {
   height: 2.5em;
   min-height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
   /*funciona en local*/
 }
 
-.ToolBar{
+/* .ToolBar{
   justify-content: center !important;
-}
+} */
 .PrivateSwipeArea-root.css-x15wq9 {
   width: 0;
 }
