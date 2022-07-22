@@ -1,6 +1,4 @@
 import "./style/Super8.scss"
-import Grid from '@mui/material/Grid';
-import { Container } from "@mui/system";
 import {Link} from 'react-scroll'
 
 const Super8 = () => {

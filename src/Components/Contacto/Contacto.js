@@ -1,5 +1,5 @@
 import { useState, } from "react";
-import { Grid, Container, Button, Modal } from "@mui/material";
+import { Grid, Button, Modal } from "@mui/material";
 import "../Contacto/style/Contacto.scss"
 
 
@@ -7,15 +7,8 @@ const Contacto = () => {
     const [openModal, setOpenModal] = useState(false)
 
 
-    const addContacto = (e) => {
-        e.preventDefault()
-        setOpenModal(true)
-    }
     const volverHome = () => {
-
         window.location.replace('')
-
-
     }
     return (
         <section>
@@ -25,11 +18,8 @@ const Contacto = () => {
                 <Grid>
                     <form name="contact"  className="form" method="POST" action="/formulario.php"  >
                         <input type="hidden" name="form-name" value="contact" />
-                        {/* <label>Nombre completo</label> */}
                         <input type="text" required placeholder="Ingresa tu nombre" name="name" />
-                        {/* <label>Correo Electronico</label> */}
                         <input type="email" required placeholder="Ingresa tu correo electronico" name="correo" />
-                        {/* <label>Ingresa su mensaje</label> */}
                         <textarea required placeholder="Describe tu proyecto aquí" name="message" />
                         <Button type="submit" className="btnContacto" name="button" id="button" variant="contained" >Enviar</Button>
                     </form>

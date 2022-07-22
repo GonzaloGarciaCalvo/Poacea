@@ -4,12 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-/* /* import Typography from '@mui/material/Typography'; */
-import Menu from '@mui/material/Menu'; 
-
 import Container from '@mui/material/Container';
-/* import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb'; */
 import {Link} from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './navbar.css'
@@ -17,7 +12,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Divider from '@mui/material/Divider';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
@@ -48,14 +42,7 @@ const theme = createTheme({
 });
 
 function NavBar() {
-  /* const [anchorEl, setAnchorEl] = React.useState(null); */
-  /* const open = Boolean(anchorEl); */
-  /* const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-      setAnchorEl(null);
-  }; */
+
 
   const [openMenu, setOpenMenu]= useState(false)
 
@@ -131,12 +118,11 @@ function NavBar() {
 				>
 					<div>
 						<IconButton>
-							{/* <ChevronRightIcon /> */}
 							<CloseIcon />
 						</IconButton>					
 					</div>
 					<div id='boxImgMobileAppBar'>
-						<img src='images/frame.webp'></img>
+						<img src='images/frame.webp' alt='logo Poacea'></img>
 					</div>
 					<Divider />
 					<List>

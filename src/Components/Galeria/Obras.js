@@ -86,7 +86,7 @@ export const obras = [
     tecnica:"Intervención fílmica en formato 35 mm con acrílico. Digitalizado e impreso en papel fine art",
     year:"2019",
     autor:"Cristina Daza",
-    formato:"",
+    formato:"Intervención fílmica en formato 35 mm con acrílico. Digitalizado e impreso en papel fine art",
     image:"../../images/dibujos/10.webp",
   },
   {
@@ -95,7 +95,7 @@ export const obras = [
     tecnica:"Intervención fílmica en formato 35 mm con hongos de fruta y raspados con bisturí. Digitalizado e impreso en papel fine art	",
     year:"2019",
     autor:"Cristina Daza",
-    formato:"",
+    formato:"Intervención fílmica en formato 35 mm con hongos de fruta y raspados con bisturí. Digitalizado e impreso en papel fine art",
     image:"../../images/dibujos/11.webp",
   },
   {
@@ -104,7 +104,7 @@ export const obras = [
     tecnica:"Fotografia analoga 35 mm digitalizada",
     year:"2021",
     autor:"Cristina Daza",
-    formato:"",
+    formato:"Fotografia analoga 35 mm digitalizada ",
     image:"../../images/dibujos/12.webp",
   },
   {

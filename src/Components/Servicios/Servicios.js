@@ -1,14 +1,6 @@
 import "./style/Servicios.scss"
-/* import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'; */
 import serv from "./servicios.json"
 import AccordionServicios from "./Accordion";
-import Grid from '@mui/material/Grid';
-import Container from "@mui/material/Container"
-/* import BasicModal from "../Modal" */
 
 const  Servicios= () => {
     

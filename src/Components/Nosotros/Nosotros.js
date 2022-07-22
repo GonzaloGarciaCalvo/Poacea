@@ -5,34 +5,6 @@ import './nosotros.css'
 
 function Nosotros({itemInfo}) {
 	
-/* let itemInfo ={
-    id:1,
-		titulo:"bien común",
-    tecnica:"tiralíneas 0.9 mm sobre papel algodon 40 gr. montaje digital ",
-    year:"2019 /11 copias 2022",
-    autor:"Loreto Carrasco",
-    formato:"impreso por primera vez en 2020 por revista “Brigidas”N*7. Reimpreso sobre papel hilado 200 gr 29,7 x 42 cm. en venta. 5 copias disponibles",
-    Image:"",
-  } */
-	/* itemInfo = [{
-    id:1,
-    titulo:"bien común",
-    tecnica:"tiralíneas 0.9 mm sobre papel algodon 40 gr. montaje digital ",
-    year:"2019 /11 copias 2022",
-    autor:"Loreto Carrasco",
-    formato:"impreso por primera vez en 2020 por revista “Brigidas”N*7. Reimpreso sobre papel hilado 200 gr 29,7 x 42 cm. en venta. 5 copias disponibles",
-    Image:"",
-  },
-	{
-    id:2,
-    titulo:"danza de marco",
-    tecnica:"retrato de memoria en policromo celeste sobre fabriano hueso 90 gr	",
-    year:"",
-    autor:"Loreto Carrasco",
-    formato:"",
-    Image:"",
-  },
-] */
 
   return (
     <Grid container id="nosotros" columns={16}>
