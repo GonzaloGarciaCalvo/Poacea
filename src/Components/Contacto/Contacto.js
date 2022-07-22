@@ -12,7 +12,7 @@ const Contacto = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_7i15h5p', 'template_o3ggqxd', form.current, 'yqDBror8_hTAX0mCP')
+    emailjs.sendForm('service_7i15h5p', 'template_2hsynle', form.current, 'yqDBror8_hTAX0mCP')
       .then((result) => {
           console.log(result.text);
           setOpenModal(true)
