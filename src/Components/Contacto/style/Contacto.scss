@@ -93,3 +93,24 @@
         }
     }
 }
+.envioForm{
+    text-align: center;
+    width: 50%;
+    max-width: 50%;
+    margin: 5rem auto !important;
+    background-color: rgba(11,27,32,0.582);
+    border: 1px solid aliceblue;
+    border-radius: 15px;
+    h4{
+        color: white;
+    }
+    .btnVolver{
+        background-color: white;
+        color:#F90606;
+        margin:1rem;
+        &:hover{
+            background-color: #F90606;
+            color: white;
+        }
+    }
+}
