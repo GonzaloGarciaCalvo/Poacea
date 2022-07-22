@@ -10,7 +10,7 @@
   background-color: white !important;
 }
 .MuiList-root.MuiList-padding.css-h4y409-MuiList-root {
-  width: 100px; 
+  width: 300px; /* ancho de swippeable  */
 }
 #toolBar.toolBar {
   width: 100%;
@@ -58,13 +58,27 @@
   /*funciona en local*/
 }
 
-
-/* .ToolBar{
-  justify-content: center !important;
-} */
 .PrivateSwipeArea-root.css-x15wq9 {
   width: 0;
 }
+
+#boxImgMobileAppBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#boxImgMobileAppBar img {
+  width: 120px;  
+  padding-bottom: 20px;
+}
+.linkResponsive{
+  cursor: pointer;
+  color: var(--redBrand);
+  font-size: 1.1rem;
+  font-family: 'Inika',serif;
+}
+
 
 @media (max-width:1200px) {
   .appBarLink {
@@ -93,6 +107,4 @@
 
   }
 }
-.linkResponsive{
-  cursor: pointer;
-}
+

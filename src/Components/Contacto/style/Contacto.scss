@@ -40,7 +40,7 @@
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 1em;
-        font-size: 1rem;
+        font-size: 0.9rem;
         border: 2px solid black;
         border-radius: 0;
         /* &::placeholder {
@@ -62,7 +62,7 @@
         height: 150px;
         margin: 1rem auto;
         display: block;
-        font-size: 1rem;
+        font-size: 0.9rem;
         border: 2px solid black;
         border-radius: 0;
         &:focus {
@@ -78,11 +78,18 @@
     .btnContacto{
         background-color:white;
         color:#F90606;
-        border: 1px solid gray;
+        border: 1px solid black;
+        border-radius: 0;
+        box-shadow: none;
+        font-family: 'Inika',serif;
+        text-transform: capitalize;
+        width: 155px;
+        height: 33px;
 
         &:hover{
-            background-color: #F90606;
-            color:white
+            background-color: #F9060610;
+            box-shadow: none; /**/
+            /* color:white */
         }
     }
 }

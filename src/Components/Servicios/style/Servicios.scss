@@ -13,6 +13,11 @@
     font-family: 'Inika',serif;
     
 }
+.boxTituloServicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 .MuiAccordionSummary-expandIconWrapper{
     color:#F90606 !important
 }

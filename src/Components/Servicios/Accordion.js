@@ -18,9 +18,12 @@ const AccordionServicios = (props) => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >   
+                    <div className='boxTituloServicio'>
+                    <CameraAltIcon className="iconoCamara"/>   
                     <Typography className="nombreServicio"> 
-                        <CameraAltIcon className="iconoCamara"/> {nombre} 
+                        {nombre} 
                     </Typography>
+                    </div>
                 </AccordionSummary>
                 <AccordionDetails className='details'>
                     <Grid container direction="row">
@@ -34,10 +37,10 @@ const AccordionServicios = (props) => {
                                 <Typography className="descripcion">
                                     {descripcion}
                                 </Typography> */}
-                            <div className='boxsuperior'>
-                                <Typography className="tituloServicio">
-                                    {titulo}
-                                </Typography>
+                            <div className='boxsuperior'>  
+                                    <Typography className="tituloServicio">
+                                        {titulo}
+                                    </Typography>
                                 <Typography className="descripcion">
                                     {descripcion}
                                 </Typography>

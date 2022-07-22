@@ -14,7 +14,7 @@ import {Link} from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
-
+import CloseIcon from '@mui/icons-material/Close';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Divider from '@mui/material/Divider';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -115,23 +115,28 @@ function NavBar() {
 								display: { xs: "inline-flex", sm: "inline-flex", md: "none" },}}
 								className="btnMenuResponsive"
 								left="1rem"
+								onClick={() => setOpenMenu(true)}
 						>
-							<MenuIcon onClick={() => setOpenMenu(true)} color="redBrand"/>
+							<MenuIcon fontSize='large'  color="redBrand"/>
 						</IconButton>
 					</Toolbar>
 				</Container>
 				<SwipeableDrawer
-
 				  swipeAreaWidth={0}
 					anchor="right"
 					open={openMenu}
 					onOpen={() => setOpenMenu(true)}
 					onClose={() => setOpenMenu(false)}
+					onClick={() => setOpenMenu(false)}
 				>
 					<div>
 						<IconButton>
-							<ChevronRightIcon onClick={() => setOpenMenu(false)} />
-						</IconButton>
+							{/* <ChevronRightIcon /> */}
+							<CloseIcon />
+						</IconButton>					
+					</div>
+					<div id='boxImgMobileAppBar'>
+						<img src='images/frame.webp'></img>
 					</div>
 					<Divider />
 					<List>
