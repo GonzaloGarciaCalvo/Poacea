@@ -16,11 +16,11 @@ function UpperBanner() {
 					</a>
 				</div>
 				<div>
-					<a href='mailto:info@poacea.cl' rel="noreferrer">
+					<a href='mailto:poacea3@gmail.com' rel="noreferrer">
 					<EmailIcon />
 					<div>
 						<p>Cotizá</p>
-						<p className="pRemovible">info@poacea.cl</p>
+						<p className="pRemovible">poacea3@gmail.com</p>
 					</div>
 					</a>
 				</div>

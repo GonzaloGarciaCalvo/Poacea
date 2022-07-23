@@ -23,7 +23,7 @@ const Footer = () => {
                             <a href='https://www.instagram.com/ppoaceaa/' target="_blank"  rel="noreferrer">
                                 <InstagramIcon />
                             </a>
-                            <a href='mailto:info@poacea.cl' target="_blank" rel="noreferrer">
+                            <a href='mailto:poacea3@gmail.com' target="_blank" rel="noreferrer">
                                 <EmailIcon />
                             </a>
                             <a href="https://www.google.com/maps/place/Poacea/@-33.4651534,-70.6228493,15z/data=!4m5!3m4!1s0x0:0x7ed4d3e71c40a1d!8m2!3d-33.4651534!4d-70.6228493?hl=es-419" target="_blank" rel="noreferrer"><LocationOnIcon /></a>
