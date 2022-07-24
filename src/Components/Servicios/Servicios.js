@@ -21,27 +21,13 @@ const  Servicios= () => {
                             descripcion={producto.descripcion}
                             titulo={producto.titulo}
                             img={producto.img}
+                            id={producto.id}
                             className="accordionServicios"
-                            /* className={(producto.id===2 || producto.id===4)? "sinBorde":"" } */
                         />)
                     })
                     
                 }
             </div>
-        {/* <Grid   className='boxFotosServicios' >
-            <Grid item xs={12} sm={6} md={3}>
-                <img className="fotoServicios" src="../../images/servicios/digitalizado.jpg" alt="digitalizado"/>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-                <img className="fotoServicios" src="../../images/servicios/filmacionceremonias.jpg" alt="digitalizado"/>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-                <img className="fotoServicios" src="../../images/servicios/fotografiaenmarcado.jpeg" alt="digitalizado"/>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-                <img className="fotoServicios" src="../../images/servicios/retratointrospectivo.jpg" alt="digitalizado"/>
-            </Grid>
-		</Grid> */}
         </div>
 
 

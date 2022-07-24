@@ -1,11 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-/* import Button from '@mui/material/Button'; */
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { Grid, Icon } from '@mui/material';
+import { Grid } from '@mui/material';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-import { padding } from '@mui/system';
 
 const style = {
   position: 'absolute',
@@ -16,7 +13,6 @@ const style = {
   bgcolor: 'rgba(245,245,245)',
   border: '0px solid #000',
   boxShadow: 0,
-  /* p: {xs:3 ,md:5,}, */
   outline: 'none',
   borderRadius: '10px',
   display:'flex',
@@ -27,7 +23,7 @@ const style = {
 
 export default function BasicModal({obra}) { 
  
-  let isMobile = window.matchMedia("only screen and (max-width: 480px)").matches; //verifica si cumple condicion
+  /* let isMobile = window.matchMedia("only screen and (max-width: 480px)").matches; */ //verifica si cumple condicion
 
   
   
@@ -36,11 +32,6 @@ export default function BasicModal({obra}) {
 
   const handleOpen = () => { 
     setOpen(true);
-    /* if (!isMobile) {
-     
-      setOpen(true);
-      console.log("pantalla en true")
-  }  else {console.log("no es movil")}; */
   }
   const handleClose = () => setOpen(false);
 
@@ -68,7 +59,6 @@ export default function BasicModal({obra}) {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            /* width={sm:""} */
           >
             <Grid item  xs={12} sm={6} display={'flex'} flexDirection={'column'} alignItems={'center'}>
               <img src={obra.image} className="fotoGaleriaAmpliada" alt="dibujo" />
@@ -87,11 +77,7 @@ export default function BasicModal({obra}) {
               </div>
               
             </Grid>
-          </Grid>
-					
-          {/* <Grid container className='boxModalCloseIcon'>
-              
-          </Grid>     */}    
+          </Grid>   
           <HighlightOffIcon onClick={handleClose} fontSize="large" className='modalCloseIcon'/>
           
 				</Box>

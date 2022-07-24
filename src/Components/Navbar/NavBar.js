@@ -63,6 +63,7 @@ function NavBar() {
 								smooth={true}
 								offset={-70}
 								className="appBarLink"
+								href='#'
 							>
 								Nosotros
 							</Link>
@@ -71,10 +72,11 @@ function NavBar() {
 								spy={true}
 								smooth={true}
 								className="appBarLink"
+								href='#'
 							>
 								Galeria
 							</Link>
-							<Link to="super8" spy={true} smooth={true} className="appBarLink">
+							<Link to="super8" spy={true} smooth={true} className="appBarLink" href='#'>
 								Super 8mm
 							</Link>
 							<Link
@@ -83,6 +85,7 @@ function NavBar() {
 								smooth={true}
 								duration={1150}
 								className="appBarLink"
+								href='#'
 							>
 								Servicios
 							</Link>
@@ -92,6 +95,7 @@ function NavBar() {
 								smooth={true}
 								duration={1150}
 								className="appBarLink"
+								href='#'
 							>
 								Contacto
 							</Link>
@@ -127,27 +131,27 @@ function NavBar() {
 					<Divider />
 					<List>
 						<ListItem>
-							<Link className="linkResponsive" to="nosotros">
+							<Link className="linkResponsive" to="nosotros" href='#'>
 								NOSOTROS
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link className="linkResponsive" to="galeria">
+							<Link className="linkResponsive" to="galeria" href='#' smooth={true}>
 								GALERIA
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link className="linkResponsive" to="super8">
+							<Link className="linkResponsive" to="super8" href='#' smooth={true}>
                 {" "}SUPER 8MM{" "}
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link className="linkResponsive" to="servicios">
+							<Link className="linkResponsive" to="servicios" href='#' smooth={true}>
 								SERVICIOS
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link className="linkResponsive" to="contacto">
+							<Link className="linkResponsive" to="contacto" href='#' smooth={true}>
 								CONTACTO
 							</Link>
 						</ListItem>
@@ -158,124 +162,3 @@ function NavBar() {
 	);
 }
 export default NavBar; 
-
-// const NavBar = () => {
-//   const [anchorElNav, setAnchorElNav] = React.useState(null);
-// /*   const [anchorElUser, setAnchorElUser] = React.useState(null); */
-
-//   const handleOpenNavMenu = (event) => {
-//     setAnchorElNav(event.currentTarget);
-//   };
-//   /* const handleOpenUserMenu = (event) => {
-//     setAnchorElUser(event.currentTarget);
-//   }; */
-
-//   const handleCloseNavMenu = () => {
-//     setAnchorElNav(null);
-//   };
-
-//   /* const handleCloseUserMenu = () => {
-//     setAnchorElUser(null);
-//   }; */
-
-//   /* function PersonalizedScroll () { Scroll.animateScroll.scrollToTop(); } */
- 
-
-//   return (
-//     <ThemeProvider theme={theme}>
-//     <AppBar position="sticky" className='appBar' color='white' sx={{ boxShadow:'none', paddingTop:'1em' }}>
-//       <Container maxWidth="xl">
-//         <Toolbar disableGutters sx={{  height:"2.5em", minHeight:"unset !important" }}>
-//           <Box sx={{ flexGrow: 1, boxShadow:'none' , display: { xs: 'flex', md: 'none' } }}>
-//             <IconButton
-//               size="large"
-//               aria-label="account of current user"
-//               aria-controls="menu-appbar"
-//               aria-haspopup="true"
-//               onClick={handleOpenNavMenu}
-//               color="inherit"
-//             >
-//               <MenuIcon />
-//             </IconButton>
-//             <Menu
-//               id="menu-appbar"
-//               anchorEl={anchorElNav}
-//               anchorOrigin={{
-//                 vertical: 'bottom',
-//                 horizontal: 'left',
-//               }}
-//               keepMounted
-//               transformOrigin={{
-//                 vertical: 'top',
-//                 horizontal: 'left',
-//               }}
-//               open={Boolean(anchorElNav)}
-//               onClose={handleCloseNavMenu}
-//               sx={{
-//                 display: { xs: 'block', md: 'none' },
-//               }}
-//             >
-//             <div className='MenuMovil'>
-//               <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLinkMovil">
-//                 Nosotros
-//               </Link>
-//               <Link to="galeria" spy={true} smooth={true} className="appBarLinkMovil">
-//                 Galeria
-//               </Link>
-//               <Link to="super8" spy={true} smooth={true} className="appBarLinkMovil">
-//                 Super 8mm
-//               </Link>
-//               <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLinkMovil" >
-//                 Servicios
-//               </Link>
-//               <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLinkMovil">
-//                 Contacto
-//               </Link>
-//             </div>
-//               {/* {pages.map((page) => (
-//                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-//                   <Typography textAlign="center">{page}</Typography>
-//                 </MenuItem> // EDITAR CON LINKS ESTATICOS
-//               ))} */}
-//             </Menu>
-//           </Box>
-//           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          
-//           <Box sx={{ justifyContent:'space-evenly', width:'100%',marginX:'3em', display: { xs: 'none', md: 'flex' } }}>
-            
-//           <div
-//             style={{
-//               display: "flex",
-//               listStyle: "none",
-//               justifyContent: "space-around",
-//               color:'#F90606', // el tema aplica solo a componentes MUI, los Links no lo son
-//               width:'100%'
-//             }}
-//           >
-//             {/* <Link to="nosotros" activeClass="active" onClick={PersonalizedScroll} spy={true} smooth={true} offset={-70} className="appBarLink">
-//               Nosotros
-//             </Link> */}
-//             <Link to="nosotros" activeClass="active" spy={true} smooth={true} offset={-70} className="appBarLink">
-//               Nosotros
-//             </Link>
-//             <Link to="galeria" spy={true} smooth={true} className="appBarLink">
-//               Galeria
-//             </Link>
-//             <Link to="super8" spy={true} smooth={true} className="appBarLink">
-//               Super 8mm
-//             </Link>
-//             <Link to="servicios" spy={true} smooth={true} duration={1150} className="appBarLink" >
-//               Servicios
-//             </Link>
-//             <Link to="contacto" spy={true} smooth={true} duration={1150} className="appBarLink">
-//               Contacto
-//             </Link>
-//           </div>  
-//           </Box>
-//         </Toolbar>
-//       </Container>
-//     </AppBar>
-//     </ThemeProvider>
-//   );
-// };
-// export default NavBar;

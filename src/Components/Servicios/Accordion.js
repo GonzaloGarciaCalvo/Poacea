@@ -8,15 +8,15 @@ import Grid from '@mui/material/Grid';
 import {Link} from 'react-scroll'
 
 const AccordionServicios = (props) => {
-    const {img, titulo, nombre, descripcion} = props
+    const {img, titulo, nombre, descripcion, id} = props
     return (
         <>
             <Accordion disableGutters square>            
                 <AccordionSummary
                     className='summary'
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
+                    aria-controls={`panel1a-content${id}`}
+                    id={`panel1a-header${id}`}
                 >   
                     <div className='boxTituloServicio'>
                     <CameraAltIcon className="iconoCamara"/>   
@@ -45,7 +45,6 @@ const AccordionServicios = (props) => {
                                     {descripcion}
                                 </Typography>
                             </div>
-                            {/* <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link> */}
                             <div className='boxButton'>
                                 <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
                             </div>

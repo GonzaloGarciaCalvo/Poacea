@@ -8,7 +8,6 @@ const Super8 = () => {
             <div  id="super8" >
                     <h1 className="tituloSeccion">SÚPER 8MM</h1>
                     <video src="./super8_x264.mp4" width="100%" height="auto" controls allowFullScreen="allowFullScreen" preload="false"></video>
-                   {/*  <iframe src="https://drive.google.com/file/d/1hCLn7A7WrOOpIy3hBoUJO-AQOX-FNswq/preview" width="427" height="240" preload="false" allowfullscreen="allowfullscreen" controls></iframe> */}
                     <div>
                         El Super 8mm es un formato de película de cine que antiguamente se usaba en los paseos familiares, cumpleaños, bodas y otros eventos. Luego de filmar los familiares, se enviaba a laboratorios para su posterior revelado. Al ser revelado, este se podía proyectar en el living de tu casa. Pero para todo ello, es de completa necesidad adquirir cámaras que hacen funcionar este material sensible. Y así, cada elemento dentro crea un recuerdo y las primeras formas de cine doméstico.
                         <br />
