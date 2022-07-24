@@ -30,7 +30,7 @@ const Contacto = () => {
         <section>
             <div id="contacto" >
                 <h1 className="tituloSeccion">CONTACTO</h1>
-                <h3>Explícanos tu proyecto acá y te contestaremos <br/>en breve con una cotización a tu email</h3>
+                <h2>Explícanos tu proyecto acá y te contestaremos <br/>en breve con una cotización a tu email</h2>
                 <Grid>
                     <form name="contact"  className="form" ref={form} onSubmit={sendEmail}  >
                         <input type="hidden" name="form-name" value="contact" />
@@ -44,7 +44,7 @@ const Contacto = () => {
             </div>
             <Modal onClose={() => setOpenModal(false)} open={openModal}>
                 <div className="envioForm">
-                    <h4>Muchas gracias por contactarnos, a la brevedad le responderemos.</h4>
+                    <h3>Muchas gracias por contactarnos, a la brevedad le responderemos.</h3>
                     <Button className="btnVolver" onClick={volverHome}  >Volver</Button>
                 </div>
             </Modal>

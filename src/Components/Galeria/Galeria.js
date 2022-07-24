@@ -40,10 +40,7 @@ import {obras} from './Obras'
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria3" alt="adorno"/>
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria4" alt="adorno"/>
 				<img src="../../images/adornoGaleria.png" className="adornoGaleria5" alt="adorno"/>
-				{/* <Grid item xs={12} direction="column"alignItems="center">
-							
-				</Grid> */}
-				<Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton contactButton__galery">Contacto</Link>
+				<Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton contactButton__galery" href='#'>Contacto</Link>
 
 			</Grid>
 		</>

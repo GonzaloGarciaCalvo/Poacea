@@ -46,7 +46,7 @@ const AccordionServicios = (props) => {
                                 </Typography>
                             </div>
                             <div className='boxButton'>
-                                <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton">Contacto</Link>
+                                <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton serviceButton" href='#'>Contacto</Link>
                             </div>
                         </Grid>
 

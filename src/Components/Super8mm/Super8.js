@@ -5,7 +5,7 @@ const Super8 = () => {
  
     return (
         <div  className="super8Background">
-            <div  id="super8" >
+            <section  id="super8" >
                     <h1 className="tituloSeccion">SÚPER 8MM</h1>
                     <video src="./super8_x264.mp4" width="100%" height="auto" controls allowFullScreen="allowFullScreen" preload="false"></video>
                     <div>
@@ -23,9 +23,9 @@ const Super8 = () => {
                         </ul>
                     </div>
                     
-                    <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton super8Buttton">Contacto</Link>
+                    <Link to="contacto" spy={true} smooth={true} duration={500} className="contactButton super8Buttton" href="#">Contacto</Link>
                 
-            </div>
+            </section>
         </div>
     )
 
