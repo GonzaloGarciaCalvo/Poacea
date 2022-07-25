@@ -290,8 +290,9 @@ figure {
     height: auto;
   }
   .fotoGaleriaAmpliada {
-    width: 80%;
-    width: 76%;
+    /* width: 80%; */
+    max-width: 76%;
+    height: auto;
     padding-top: 12%;
   }
   .proyecto {
