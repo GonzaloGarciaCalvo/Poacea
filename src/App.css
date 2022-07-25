@@ -10,6 +10,9 @@ body {
 
 
 /*** GENERALES ***/
+a {
+  text-decoration: none;
+}
 .logoSection {
   display: flex;
   flex-direction: column;

@@ -285,7 +285,7 @@ figure {
     transform: translate(0.9em);
   }
   .fotoGaleria {
-    width: 100% !important;
+    max-width: 100% !important;
     margin-bottom: 0;
     height: auto;
   }
@@ -364,6 +364,7 @@ figure {
     font-size: 0.85em;
   }
   .boxTextoModal h3 {
+    font-size: 0.9em;
     font-weight: 400;
   }
 

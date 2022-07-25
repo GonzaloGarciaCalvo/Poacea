@@ -69,8 +69,9 @@
   justify-content: center;
 }
 #boxImgMobileAppBar img {
-  width: 120px;  
-  padding-bottom: 20px;
+  width: 120px;    
+  height: 120px;
+  margin-bottom: 20px;
 }
 .linkResponsive{
   cursor: pointer;
