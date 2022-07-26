@@ -126,7 +126,7 @@ function NavBar() {
 						</IconButton>					
 					</div>
 					<div id='boxImgMobileAppBar'>
-						<img src='images/frame.webp' alt='logo Poacea'></img>
+						<img src='images/frame.jpg' alt='logo Poacea'></img>
 					</div>
 					<Divider />
 					<List>

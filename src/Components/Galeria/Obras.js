@@ -6,7 +6,7 @@ export const obras = [
     year:"2019 /11 copias 2022",
     autor:"Loreto Carrasco",
     formato:"Impreso por primera vez en 2020 por revista “Brigidas”N*7. Reimpreso sobre papel hilado 200 gr 29,7 x 42 cm. en venta. 5 copias disponibles",
-    image:"../../images/dibujos/1.webp",
+    image:"../../images/dibujos/1.jpg",
   },
   {
     id:2,
@@ -15,7 +15,7 @@ export const obras = [
     year:"2021",
     autor:"Loreto Carrasco",
     formato:"22,9 x 30,3 cm Marco mañio 1,3 x 2 cm cubierta de vidrio, en venta",
-    image:"../../images/dibujos/2.webp",
+    image:"../../images/dibujos/2.jpg",
   },
   {
     id:3,
@@ -24,7 +24,7 @@ export const obras = [
     year:"2018",
     autor:"Loreto Carrasco",
     formato:"21 x 21 cm para enmarcar, en venta",
-    image:"../../images/dibujos/3.webp",
+    image:"../../images/dibujos/3.jpg",
   },
   {
     id:4,
@@ -33,7 +33,7 @@ export const obras = [
     year:"2021",
     autor:"Cristina Daza	",
     formato:"23 x 31,3 cm Marco aluminio redondeado 0,7 x 2 cm cubierta de vidrio",
-    image:"../../images/dibujos/4.webp",
+    image:"../../images/dibujos/4.jpg",
   },
   {
     id:5,
@@ -42,7 +42,7 @@ export const obras = [
     year:"2020",
     autor:"Cristina Daza	",
     formato:"25,5 x 31,2 cm Marco mañio 1,3 x 1,3 cm cubierta de vidrio, en venta",
-    image:"../../images/dibujos/5.webp",
+    image:"../../images/dibujos/5.jpg",
   },
   {
     id:6,
@@ -51,7 +51,7 @@ export const obras = [
     year:"2020",
     autor:"Cristina Daza	",
     formato:"20,2 x 25,3 cm Marco mañio 1,3 x 1,3 cm cubierta de vidrio",
-    image:"../../images/dibujos/6.webp",
+    image:"../../images/dibujos/6.jpg",
   },
   {
     id:7,
@@ -60,7 +60,7 @@ export const obras = [
     year:"2021",
     autor:"Loreto Carrasco",
     formato:"158,8 x 114,8 Marco madera pintada en acrilico rojo 3 x 1,3 cm cubierta de vididrio, en venta",
-    image:"../../images/dibujos/7.webp",
+    image:"../../images/dibujos/7.jpg",
   },
   {
     id:8,
@@ -69,7 +69,7 @@ export const obras = [
     year:"2019",
     autor:"Loreto Carrasco",
     formato:"32,5 x 41,2 cm Marco aluminio brillo cálido 1 x 2 cm cubierta vidrio, Se realizan a pedido con audio de voz nombrando al retratadx.",
-    image:"../../images/dibujos/8.webp",
+    image:"../../images/dibujos/8.jpg",
   },
   {
     id:9,
@@ -78,7 +78,7 @@ export const obras = [
     year:"2018",
     autor:"Loreto Carrasco",
     formato:"32,5 x 41,2 cm Marco aluminio brillo cálido 1 x 2 cm cubierta vidrio. Se realizan a pedido con audio de voz nombrando al retratadx",
-    image:"../../images/dibujos/9.webp",
+    image:"../../images/dibujos/9.jpg",
   },
   {
     id:10,
@@ -87,7 +87,7 @@ export const obras = [
     year:"2019",
     autor:"Cristina Daza",
     formato:"Intervención fílmica en formato 35 mm con acrílico. Digitalizado e impreso en papel fine art",
-    image:"../../images/dibujos/10.webp",
+    image:"../../images/dibujos/10.jpg",
   },
   {
     id:11,
@@ -96,7 +96,7 @@ export const obras = [
     year:"2019",
     autor:"Cristina Daza",
     formato:"Intervención fílmica en formato 35 mm con hongos de fruta y raspados con bisturí. Digitalizado e impreso en papel fine art",
-    image:"../../images/dibujos/11.webp",
+    image:"../../images/dibujos/11.jpg",
   },
   {
     id:12,
@@ -105,7 +105,7 @@ export const obras = [
     year:"2021",
     autor:"Cristina Daza",
     formato:"Fotografia analoga 35 mm digitalizada ",
-    image:"../../images/dibujos/12.webp",
+    image:"../../images/dibujos/12.jpg",
   },
   {
     id:13,
@@ -114,7 +114,7 @@ export const obras = [
     year:"2022",
     autor:"Loreto Carrasco",
     formato:"14,8 x 21 cm sketch, en venta",
-    image:"../../images/dibujos/13.webp",
+    image:"../../images/dibujos/13.jpg",
   },
   {
     id:14,
@@ -123,7 +123,7 @@ export const obras = [
     year:"2018",
     autor:"Loreto Carrasco",
     formato:"21 x 21 para enmarcar, en venta",
-    image:"../../images/dibujos/14.webp",
+    image:"../../images/dibujos/14.jpg",
   },
   {
     id:15,
@@ -132,7 +132,7 @@ export const obras = [
     year:"2018",
     autor:"Loreto Carrasco",
     formato:"21 x 21 para enmarcar, en venta",
-    image:"../../images/dibujos/15.webp",
+    image:"../../images/dibujos/15.jpg",
   },
   {
     id:16,
@@ -141,7 +141,7 @@ export const obras = [
     year:"2022",
     autor:"Loreto Carrasco",
     formato:"14,8 x 21 cm sketch, en venta",
-    image:"../../images/dibujos/16.webp",
+    image:"../../images/dibujos/16.jpg",
   },
   {
     id:17,
@@ -150,7 +150,7 @@ export const obras = [
     year:"2022",
     autor:"Loreto Carrasco",
     formato:"14,8 x 21 cm sketch, en venta",
-    image:"../../images/dibujos/17.webp",
+    image:"../../images/dibujos/17.jpg",
   },
   {
     id:18,
@@ -159,6 +159,6 @@ export const obras = [
     year:"2022",
     autor:"Loreto Carrasco",
     formato:"14,8 x 21 cm sketch, en venta",
-    image:"../../images/dibujos/18.webp",
+    image:"../../images/dibujos/18.jpg",
   },
 ]

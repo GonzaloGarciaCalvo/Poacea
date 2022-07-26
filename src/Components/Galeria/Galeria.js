@@ -30,7 +30,7 @@ import {obras} from './Obras'
 						title='Descargar pdf'
 						>
 							{/* <p> Ver PDF</p> */}
-							<img src="../../images/dibujos/cap_pdf_2.webp" alt="link a pdf"  className="capPdf2 "/>	
+							<img src="../../images/dibujos/cap_pdf.jpg" alt="link a pdf"  className="capPdf2 "/>	
 					</a>
 					{/* <img src="../../images/dibujos/cap_pdf.jpg" alt="link a pdf"  className="capPdf "/> */}
 				</Grid>

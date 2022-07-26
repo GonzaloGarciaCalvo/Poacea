@@ -23,17 +23,17 @@ function Nosotros({itemInfo}) {
 					<Box className="circleContainer">
 						<Box className="boxImage">
 							<img
-								src="images/loreto/Mask_group.webp"
+								src="images/loreto/Mask_group.png"
                 className="circleImg"
 								alt="logo Poacea"
 							/>
 							<img
-								src="images/loreto/Ellipse34.webp"
+								src="images/loreto/Ellipse34.jpg"
                 className="mixColoredCircle"
 								alt="composicion de imagen"
 							/>
 							<img
-								src="images/loreto/Ellipse37.png"
+								src="images/loreto/Ellipse37.jpg"
 								className="uniformCircle" 
 								alt="composicion de imagen"
 							/>
@@ -48,12 +48,12 @@ function Nosotros({itemInfo}) {
 					<Box className="circleContainer" >
 						<Box className="boxImage">
 							<img
-								src="images/cristina/cristina.webp"
+								src="images/cristina/cristina.png"
 								className="circleImg"
 								alt="logo Poacea"
 							/>
 							<img
-								src="images/cristina/cristinaOculta.webp"
+								src="images/cristina/cristinaOculta.jpg"
 								className='mixColoredCircle__cristina'
 								alt="composicion de imagen"
 							/>
@@ -63,8 +63,8 @@ function Nosotros({itemInfo}) {
 								alt="composicion de imagen"
 							/>
 							<img
-								src="images/cristina/smallCircleCristina.webp"
-								alt="composicion de imagen Francisco"
+								src="images/cristina/smallCircleCristina.png"
+								alt="composicion de imagen"
 								className="smallCircle_cristina"
 							/>
 						</Box>
@@ -97,7 +97,7 @@ function Nosotros({itemInfo}) {
           <p className="descripcionSocio"> 
 						El nombre POACEA es una inspiración a la familia de gramíneas o Poáceas (Poaceae) por ser un grupo de plantas con un alto desarrollo adaptativo.
 					</p>
-					<img src="images/revelar.webp" className="revelar" alt='icono revelar'/>
+					<img src="images/revelar.jpg" className="revelar" alt='icono revelar'/>
 				</Grid>
 			</Grid>
 

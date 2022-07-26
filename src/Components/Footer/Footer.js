@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer">
                 <Grid container columns={16} className="boxFooter" direction='row' /* sx={{direction:{xs:'column',md:'row'}}} */>
                     <Grid item xs={16} sm={16} md={6} xl={6} className="logoFooter">
-                        <img src="./images/ESTUDIO1footer.png" className="logoFooterImg" alt="logo Poacea"/>
+                        <img src="./images/frame_white.png" className="logoFooterImg" alt="logo Poacea"/>
                     </Grid>
                     <Grid item xs={16} sm={16} md={8}className="boxRedes">
                         <div className="redes">

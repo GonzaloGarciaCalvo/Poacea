@@ -30,9 +30,10 @@
   justify-content: center;
 }
 .fotoGaleria {
-  width: 100% !important;
-
+  width: 100%;
+  max-width: 100% !important;
   height: auto;
+  /* height: 100%; */
 } 
 .boxAdorno {
   position: relative;
@@ -85,6 +86,7 @@
 }
 .fotoGaleriaAmpliada {
   width: 100%;
+  height: auto;
 }
 .loading{
   margin: 0px auto
@@ -156,7 +158,7 @@ figure {
 
 .capPdf2 {    
   width: 92.2%;
-  height: 87%;
+  height: 88%;
   margin-right: 4.3%;
   margin-left: 4.1%;
   box-sizing: border-box;
