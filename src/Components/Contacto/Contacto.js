@@ -34,9 +34,9 @@ const Contacto = () => {
                 <Grid>
                     <form name="contact"  className="form" ref={form} onSubmit={sendEmail}  >
                         <input type="hidden" name="form-name" value="contact" />
-                        <input type="text" required placeholder="Ingresa tu nombre" name="user_name" />
-                        <input type="email" required placeholder="Ingresa tu correo electronico" name="user_email" />
-                        <textarea required placeholder="Describe tu proyecto aquí" name="message" />
+                        <input type="text" required placeholder="Ingresa tu nombre" id="nombre" name="nombre" />
+                        <input type="email" required placeholder="Ingresa tu correo electronico" id="email" name="email" />
+                        <textarea required placeholder="Describe tu proyecto aquí" id="mensaje" name="mensaje" />
                         <Button type="submit" className="btnContacto" name="button" id="button" variant="contained" >Enviar</Button>
                     </form>
                 </Grid>

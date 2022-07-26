@@ -73,30 +73,24 @@ function Nosotros({itemInfo}) {
 
 				<Grid item xs={16} sm={8} className="boxDescripcion">
 					<p className="descripcionSocio">
-          POACEA es un estudio de dibujo que se inicia el año 2018 en el taller de Loreto Carrasco ubicado 
-          en la ciudad de Osorno, en el entretecho de la casa de su abuela en Baquedano 598, 
-          donde conoce a Francisco A. Ortega quien colabora en el proyecto desde Producción.
+					POACEA es un Estudio de Dibujo, iniciado el año 2018 por Loreto Carrasco Lic. En Artes Visuales por la U. Austral de Chile el año 2014, quien adecua un espacio en el entretecho de la casa de su abuela en Baquedano 598, Osorno. 
+
+
+
+ 
+
 					</p>
 					<p className="descripcionSocio">
-          En el taller osornino experimenta con el dibujo y la serigrafía para ser aplicado 
-          como estampado en textiles utilizados en vestuario. Tras migrar a la ciudad de Santiago 
-          crea el sello que se imprimirá sobre dibujos y copias serigráficas.
+					Loreto en el taller osornino trabaja en dibujo y serigrafía experimentando la técnica de máscaras de papel estampando sobre textiles utilizados para vestuario, compartiendo pruebas y resultados con Ana María Ramos, grabadora, a quien visita en su taller desde 2016. Tras migrar a la ciudad de Santiago el año 2019, por razones prácticas ahonda en el estudio del dibujo utilizando policromos, grafitos y tinta negra. 
 					</p>
 					<p className="descripcionSocio">
-						Actualmente el trabajo de taller es compartido junto a Cristina Daza 
-						con base en Santiago de Chile; Directora de fotografía y camarógrafa. 
-						quien ha realizado cámara y asistencia de cámara en diversos proyectos de cine y audiovisual.
+					Actualmente el espacio de estudio se realiza junto a Cristina Daza, quien se relaciona con distintos formatos fílmicos y ha realizado diversos proyectos de cine y audiovisual desde la cámara.
 					</p>
 					<p className="descripcionSocio">
-						Desde el 2010 a la actualidad se relaciona con formatos fílmicos, desde su filmación, 
-						intervención, restauración y revelado.
+					Loreto y Cristina, han logrado conservar un espacio de desarrollo común. Congeniando el nombre de POACEA en inspiración a la familia de gramíneas o Poaceae, por ser un grupo de plantas con un alto desarrollo adaptativo. 
+
 					</p>
-					<p className="descripcionSocio">
-						Ambas de personalidades inquietas han logrado conservar un espacio de desarrollo común.
-					</p>
-          <p className="descripcionSocio"> 
-						El nombre POACEA es una inspiración a la familia de gramíneas o Poáceas (Poaceae) por ser un grupo de plantas con un alto desarrollo adaptativo.
-					</p>
+					
 					<img src="images/revelar.jpg" className="revelar" alt='icono revelar'/>
 				</Grid>
 			</Grid>
