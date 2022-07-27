@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .fotoGaleria {
   width: 100%;
@@ -108,18 +109,21 @@ figure img{
 }
 .descripcionProyecto h3 {
   color: var(--redBrand);
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   margin-bottom: 0;
   text-align: left !important;
-  padding-left: 17%;
-  padding-right: 20%;
+  /* padding-left: 17%; */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .descripcionProyecto p {
   text-align:left;
   font-size: 0.9em;
-  padding-left: 17%;
-  padding-right: 17%;
+  /* padding-left: 17%;
+  padding-right: 17%; */
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 0; 
 }
 
@@ -208,7 +212,14 @@ figure {
 }
 
 @media (max-width:1300px) {
-  
+  .descripcionProyecto h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .descripcionProyecto p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .adornoGaleria4 {
     position:absolute;top: 63.2%; left: 15%;
   }
@@ -223,11 +234,12 @@ figure {
     padding-right: 15%;
   }
   .descripcionProyecto h3 {
-    font-size: 0.95em;
-    padding-left: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .descripcionProyecto p {
-    padding-left: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 @media (max-width:1030px) { 
